@@ -20,10 +20,6 @@ This project is intended to be used to explore the visionOS frameworks and assis
 * Download or clone the project
 * Run the project on an Apple Vision Pro simulator
 
-## Help
-
-If the project is running but the simulator or device is not showing the widget, change the scheme to directly run the target.
-
 ## Authors
 
 Cecilia Hollins 
