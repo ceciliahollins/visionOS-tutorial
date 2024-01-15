@@ -10,7 +10,16 @@ import Observation
 
 @Observable
 class ViewModel {
+    var currNavigationView: MusicNavigation = .library
+    
     var myLibrary: MyLibrary = MyLibrary()
     var currPlayingPlaylist: Playlist = Playlist(title: "", description: "", coverImage: "", songs: [])
     var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "")
+    
+    var myConcerts: MyConcerts = MyConcerts()
+}
+
+enum MusicNavigation {
+    case library
+    case concerts
 }

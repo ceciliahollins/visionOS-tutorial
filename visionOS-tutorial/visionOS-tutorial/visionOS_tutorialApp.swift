@@ -14,7 +14,7 @@ struct VisionProFirstProjectApp: App {
     
     var body: some Scene {
         WindowGroup(id: "library") {
-            LibraryView()
+            MusicNavigationView()
                 .environment(model)
         }
         .windowStyle(.plain)
