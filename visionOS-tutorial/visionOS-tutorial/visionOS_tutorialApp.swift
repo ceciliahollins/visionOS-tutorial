@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct VisionProFirstProjectApp: App {
@@ -25,5 +26,10 @@ struct VisionProFirstProjectApp: App {
                 .environment(model)
         }
         .windowStyle(.plain)
+        
+        ImmersiveSpace(id: "concert") {
+            ConcertView()
+        }
+        .immersionStyle(selection: .constant(.progressive), in: .progressive)
     }
 }

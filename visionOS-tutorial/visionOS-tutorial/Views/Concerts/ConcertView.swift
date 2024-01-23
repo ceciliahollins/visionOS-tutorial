@@ -10,54 +10,40 @@ import RealityKit
 import AVKit
 
 struct ConcertView: View {
-    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "glassAnimals_Gooey", withExtension: "MOV")!)
+    
+//    @State private var destination: ConcertDestination
+//    
+//    init(_ destination: ConcertDestination) {
+//        self.destination = destination
+//    }
     
     var body: some View {
-        CustomVideoPlayer(player: avPlayer)
-            .onAppear {
-                avPlayer.play()
+        GeometryReader3D { geo in
+            RealityView { content in
+                let video = makeVideoEntity()
+                content.add(video)
+
+                video.scale = SIMD3(repeating: 3)
+                video.position = [0, 2, -3]
             }
-    }
-}
-
-struct CustomVideoPlayer: UIViewControllerRepresentable {
-    
-    var player: AVPlayer
-    
-    func makeCoordinator() -> Coordinator {
-        return Coordinator(parent: self)
-    }
-    
-    func makeUIViewController(context: Context) -> AVPlayerViewController {
-        let controller = AVPlayerViewController()
-        
-        controller.player = player
-        controller.showsPlaybackControls = false
-        
-        controller.videoGravity = .resizeAspectFill
-        
-        player.actionAtItemEnd = .none
-        
-        NotificationCenter.default.addObserver(context.coordinator, selector: #selector(context.coordinator.restartPlayback), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
-        
-        return controller
-    }
-    
-    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        
-    }
-    
-    class Coordinator: NSObject {
-        var parent: CustomVideoPlayer
-        init(parent: CustomVideoPlayer) {
-            self.parent = parent
-        }
-        @objc func restartPlayback() {
-            parent.player.seek(to: .zero)
         }
     }
-}
-
-#Preview {
-    ConcertView()
+    
+    func makeVideoEntity() -> Entity {
+        let entity = Entity()
+        
+        let asset = AVURLAsset(url: Bundle.main.url(forResource: "glassAnimals_Gooey",
+                                                    withExtension: "MOV")!)
+        let playerItem = AVPlayerItem(asset: asset)
+        
+        let player = AVPlayer()
+        var videoPlayerComponent = VideoPlayerComponent(avPlayer: player)
+        videoPlayerComponent.isPassthroughTintingEnabled = true
+        entity.components[VideoPlayerComponent.self] = videoPlayerComponent
+                
+        player.replaceCurrentItem(with: playerItem)
+        player.play()
+        
+        return entity
+    }
 }

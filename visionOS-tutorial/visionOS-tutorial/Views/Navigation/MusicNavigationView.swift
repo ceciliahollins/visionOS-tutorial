@@ -15,6 +15,9 @@ struct MusicNavigationView: View {
     @State private var selectedPlaylist: Playlist?
     @State private var selectedConcert: String?
     
+    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
+    @Environment(\.dismissWindow) private var dismissWindow
+    
     var body: some View {
         @Bindable var model = model
         
@@ -27,7 +30,12 @@ struct MusicNavigationView: View {
                 }
                 
                 Button {
-                    model.currNavigationView = .concerts
+                    //model.currNavigationView = .concerts
+                    Task {
+                        // TODO: add error handling
+                        await openImmersiveSpace(id: "concert")
+                        dismissWindow(id: "library")
+                    }
                 } label: {
                     Text("Concerts")
                 }
@@ -60,7 +68,7 @@ struct MusicNavigationView: View {
                     .environment(model)
                     .toolbar(.hidden, for: .navigationBar)
             case .concerts:
-                ConcertView()
+                EmptyView()
             }
         }
     }

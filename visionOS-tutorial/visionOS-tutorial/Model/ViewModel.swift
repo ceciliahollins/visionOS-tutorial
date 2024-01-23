@@ -17,6 +17,7 @@ class ViewModel {
     var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "")
     
     var myConcerts: MyConcerts = MyConcerts()
+    var selectedVideo: Concert = Concert(title: "Glass Animals - Gooey", videoName: "glassAnimals_Gooey")
 }
 
 enum MusicNavigation {
