@@ -9,54 +9,39 @@ import SwiftUI
 import RealityKit
 import AVKit
 
+import SwiftUI
+import RealityKit
+import AVKit
+
 struct VideoPlayer: View {
     
-    var videoName: String
+    @Environment(ViewModel.self) private var model
     
     var body: some View {
-        let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: videoName, withExtension: "MOV")!)
-        
-        return CustomVideoPlayer(player: avPlayer)
-            .onAppear {
-                avPlayer.play()
-            }
-    }
-}
+        RealityView { content in
+            let video = makeVideoEntity()
+            content.add(video)
 
-struct CustomVideoPlayer: UIViewControllerRepresentable {
-    
-    var player: AVPlayer
-    
-    func makeCoordinator() -> Coordinator {
-        return Coordinator(parent: self)
-    }
-    
-    func makeUIViewController(context: Context) -> AVPlayerViewController {
-        let controller = AVPlayerViewController()
-        
-        controller.player = player
-        controller.showsPlaybackControls = false
-        
-        controller.videoGravity = .resizeAspectFill
-        
-        player.actionAtItemEnd = .none
-        
-        NotificationCenter.default.addObserver(context.coordinator, selector: #selector(context.coordinator.restartPlayback), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
-        
-        return controller
-    }
-    
-    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        
-    }
-    
-    class Coordinator: NSObject {
-        var parent: CustomVideoPlayer
-        init(parent: CustomVideoPlayer) {
-            self.parent = parent
+            video.scale = SIMD3(repeating: 3)
+            video.position = [0, 2, -3]
         }
-        @objc func restartPlayback() {
-            parent.player.seek(to: .zero)
-        }
+    }
+    
+    func makeVideoEntity() -> Entity {
+        let entity = Entity()
+        
+        let asset = AVURLAsset(url: Bundle.main.url(forResource: model.currPlayingVideo.videoName,
+                                                    withExtension: "MOV")!)
+        let playerItem = AVPlayerItem(asset: asset)
+        
+        let player = AVPlayer()
+        var videoPlayerComponent = VideoPlayerComponent(avPlayer: player)
+        videoPlayerComponent.isPassthroughTintingEnabled = true
+        entity.components[VideoPlayerComponent.self] = videoPlayerComponent
+                
+        player.replaceCurrentItem(with: playerItem)
+        player.play()
+        
+        return entity
     }
 }

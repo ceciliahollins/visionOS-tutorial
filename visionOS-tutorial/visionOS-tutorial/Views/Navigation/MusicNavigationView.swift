@@ -13,11 +13,8 @@ struct MusicNavigationView: View {
     
     @Environment(ViewModel.self) private var model
     @State private var selectedPlaylist: Playlist?
-    @State private var selectedConcert: String?
-    
-    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
-    @Environment(\.dismissWindow) private var dismissWindow
-    
+    @State private var selectedConcert: Concert?
+        
     var body: some View {
         @Bindable var model = model
         
@@ -27,23 +24,23 @@ struct MusicNavigationView: View {
                     model.currNavigationView = .library
                 } label: {
                     Text("Library")
+                        .frame(maxWidth: .infinity)
                 }
+                .padding(.horizontal)
                 
                 Button {
-                    //model.currNavigationView = .concerts
-                    Task {
-                        // TODO: add error handling
-                        await openImmersiveSpace(id: "concert")
-                        dismissWindow(id: "library")
-                    }
+                    model.currNavigationView = .concerts
                 } label: {
                     Text("Concerts")
+                        .frame(maxWidth: .infinity)
                 }
+                .padding(.horizontal)
+                .padding(.bottom)
                 
                 switch model.currNavigationView {
                 case .library:
                     List(selection: $selectedPlaylist) {
-                        ForEach(model.myLibrary.library, id: \.title) { playlist in
+                        ForEach(model.myLibrary.library, id: \.id) { playlist in
                             NavigationLink(value: playlist) {
                                 TabbarItem(title: playlist.title,
                                            image: Image(playlist.coverImage))
@@ -52,15 +49,17 @@ struct MusicNavigationView: View {
                     }
                 case .concerts:
                     List(selection: $selectedConcert) {
-                        ForEach(model.myConcerts.concerts, id: \.title) { concert in
+                        ForEach(model.myConcerts.concerts, id: \.id) { concert in
                             NavigationLink(value: concert) {
-                                TabbarItem(title: concert.title,
-                                           image: Image(""))
+                                TabbarItem(title: concert.artist,
+                                           image: Image(concert.imageThumbnail))
                             }
                         }
                     }
                 }
             }
+            .toolbar(.hidden)
+            .padding()
         } detail: {
             switch model.currNavigationView {
             case .library:
@@ -69,6 +68,7 @@ struct MusicNavigationView: View {
                     .toolbar(.hidden, for: .navigationBar)
             case .concerts:
                 EmptyView()
+                ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
             }
         }
     }

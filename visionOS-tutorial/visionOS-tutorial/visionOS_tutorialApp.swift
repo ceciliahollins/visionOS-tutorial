@@ -27,8 +27,9 @@ struct VisionProFirstProjectApp: App {
         }
         .windowStyle(.plain)
         
-        ImmersiveSpace(id: "concert") {
-            ConcertView()
+        ImmersiveSpace(id: "concertVideo") {
+            VideoPlayer()
+                .environment(model)
         }
         .immersionStyle(selection: .constant(.progressive), in: .progressive)
     }

@@ -9,6 +9,13 @@ import Foundation
 
 struct Concert: Identifiable, Hashable {
     let id = UUID()
-    let title: String
+    let artist: String
+    let songs: [ConcertSong]
+    let imageThumbnail: String
+    let imageHeader: String
+}
+
+struct ConcertSong: Hashable {
+    let songName: String
     let videoName: String
 }

@@ -13,12 +13,13 @@ struct TabbarItem: View {
     let image: Image
     
     var body: some View {
-        GeometryReader { proxy in // 1
+        GeometryReader { proxy in
             HStack(alignment: .bottom) {
                 image
                     .resizable()
                     .scaledToFit()
-                    .frame(width: proxy.size.width*0.2) // 1
+                    .frame(width: proxy.size.width*0.2)
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
                 
                 Text(title)
                     .font(.body)

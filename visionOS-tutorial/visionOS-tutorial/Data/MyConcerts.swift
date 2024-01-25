@@ -15,9 +15,14 @@ struct MyConcerts {
         concerts.append(MyConcerts.createGlassAnimalsConcert())
     }
     
-    // TODO: update when more concerts are brought into the project
     static func createGlassAnimalsConcert() -> Concert {
-        return Concert(title: "",
-                       videoName: "glassAnimals_Gooey")
+        let one = ConcertSong(songName: "Gooey", videoName: "GlassAnimals_Gooey")
+        let two = ConcertSong(songName: "The Other Side Of Paradise", videoName: "GlassAnimals_TheOtherSideOfParadise")
+        let three = ConcertSong(songName: "Heat Waves", videoName: "GlassAnimals_HeatWaves")
+        
+        return Concert(artist: "Glass Animals",
+                       songs: [one, two, three],
+                       imageThumbnail: "glassAnimals",
+                       imageHeader: "glassAnimalsHeader")
     }
 }

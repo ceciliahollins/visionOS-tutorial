@@ -11,39 +11,42 @@ import AVKit
 
 struct ConcertView: View {
     
-//    @State private var destination: ConcertDestination
-//    
-//    init(_ destination: ConcertDestination) {
-//        self.destination = destination
-//    }
+    var concert: Concert
+    @State private var concertRowIsFocused: Bool = false
+    
+    @Environment(ViewModel.self) private var model
+    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
+    @Environment(\.openWindow) private var openWindow
+    @Environment(\.dismissWindow) private var dismissWindow
     
     var body: some View {
-        GeometryReader3D { geo in
-            RealityView { content in
-                let video = makeVideoEntity()
-                content.add(video)
-
-                video.scale = SIMD3(repeating: 3)
-                video.position = [0, 2, -3]
-            }
-        }
+        songRow
     }
     
-    func makeVideoEntity() -> Entity {
-        let entity = Entity()
+    var songRow: some View {
+        @Bindable var model = model
         
-        let asset = AVURLAsset(url: Bundle.main.url(forResource: "glassAnimals_Gooey",
-                                                    withExtension: "MOV")!)
-        let playerItem = AVPlayerItem(asset: asset)
-        
-        let player = AVPlayer()
-        var videoPlayerComponent = VideoPlayerComponent(avPlayer: player)
-        videoPlayerComponent.isPassthroughTintingEnabled = true
-        entity.components[VideoPlayerComponent.self] = videoPlayerComponent
-                
-        player.replaceCurrentItem(with: playerItem)
-        player.play()
-        
-        return entity
+        return ScrollView {
+            VStack(spacing: 0) {
+                ForEach(concert.songs, id: \.songName) { song in
+                    Button(action: {
+                        model.currPlayingVideo = song
+                        Task {
+                            // TODO: add error handling
+                            await openImmersiveSpace(id: "concertVideo")
+                            dismissWindow(id: "library")
+                        }
+                    }, label: {
+                        Text(song.songName)
+                    })
+                    .buttonStyle(.borderless)
+                    .buttonBorderShape(.roundedRectangle(radius: 20))
+                    .onHover(perform: { hovering in
+                        concertRowIsFocused = hovering
+                    })
+                }
+            }
+        }
     }
 }

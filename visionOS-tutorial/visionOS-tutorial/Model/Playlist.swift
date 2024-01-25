@@ -14,3 +14,10 @@ struct Playlist: Identifiable, Hashable {
     let coverImage: String
     let songs: [Song]
 }
+
+struct Song: Hashable {
+    let songTitle: String
+    let artist: String
+    let albumCover: String
+    let songLength: String
+}

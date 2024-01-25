@@ -20,25 +20,19 @@ struct PlaylistView: View {
     var body: some View {
         @Bindable var model = model
         
-        GeometryReader { proxy in // 1
+        GeometryReader { proxy in
             ZStack {
                 VStack(alignment: .leading) {
                     playlistHeader
-                        .frame(height: proxy.size.height*0.3) // 1
+                        .frame(height: proxy.size.height*0.3)
                         .padding()
                     
                     songRow
                         .padding(.leading)
                 }
-                // 3
                 .onChange(of: showSongDetails) { _, newValue in
                     openWindow(id: "songDetails")
                 }
-                
-                // 2
-//                if showSongDetails {
-//                    songDetails
-//                }
             }
         }
         .padding()
@@ -50,7 +44,8 @@ struct PlaylistView: View {
                 Image(playlist.coverImage)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: proxy.size.width*0.3) // 1
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
+                    .frame(width: proxy.size.width*0.3)
                 
                 VStack(alignment: .leading) {
                     Text(playlist.title)
@@ -68,46 +63,47 @@ struct PlaylistView: View {
     var songRow: some View {
         @Bindable var model = model
         
-        return VStack(spacing: 0) {
-            ForEach(playlist.songs, id: \.songTitle) { song in
-                Button(action: {
-                    showSongDetails = true // 2
-                    model.currPlayingSong = song
-                    model.currPlayingPlaylist = playlist
-                }, label: {
-                    HStack {
-                        Image(systemName: playlistRowIsFocused ? "play" : "ellipsis")
-                            .padding()
-                        
-                        Image(song.albumCover)
-                            .resizable()
-                            .scaledToFit()
-                            .imageScale(.large)
-                        
-                        VStack(alignment: .leading) {
-                            Text(song.songTitle)
-                                .font(.title3)
-                            Text(song.artist)
-                                .font(.callout)
-                                .foregroundStyle(.secondary)
+        return ScrollView {
+            VStack(spacing: 0) {
+                ForEach(playlist.songs, id: \.songTitle) { song in
+                    Button(action: {
+                        showSongDetails = true
+                        model.currPlayingSong = song
+                        model.currPlayingPlaylist = playlist
+                    }, label: {
+                        HStack {
+                            Image(systemName: playlistRowIsFocused ? "play" : "ellipsis")
+                                .padding(.trailing)
+                            
+                            Image(song.albumCover)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
+                            
+                            VStack(alignment: .leading) {
+                                Text(song.songTitle)
+                                    .font(.title3)
+                                Text(song.artist)
+                                    .font(.callout)
+                                    .foregroundStyle(.secondary)
+                            }
+                            
+                            Spacer()
+                            
+                            Text(song.songLength)
                         }
-                        
-                        Spacer()
-                        
-                        Text(song.songLength)
-                    }
-                    .padding(4)
-                })
-                .buttonStyle(.borderless)
-                .buttonBorderShape(.roundedRectangle(radius: 20))
-                .onHover(perform: { hovering in
-                    playlistRowIsFocused = hovering
-                })
+                    })
+                    .buttonStyle(.borderless)
+                    .buttonBorderShape(.roundedRectangle(radius: 20))
+                    .onHover(perform: { hovering in
+                        playlistRowIsFocused = hovering
+                    })
+                }
             }
         }
     }
     
-    // 2
     var songDetails: some View {
         VStack {
             SongDetailView()
