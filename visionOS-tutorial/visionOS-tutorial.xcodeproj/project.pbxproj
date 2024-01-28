@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */; };
 		2C3B69A92A79C4B200E4A4F2 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3B69A82A79C4B200E4A4F2 /* RealityKitContent */; };
 		2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */; };
 		2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertControlsView.swift; sourceTree = "<group>"; };
 		2C3B69A32A79C4B200E4A4F2 /* visionOS-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "visionOS-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B69A72A79C4B200E4A4F2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionOS_tutorialApp.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				2CFBC2532B54DCB300B570E0 /* ConcertView.swift */,
 				2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */,
+				2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */,
 			);
 			path = Concerts;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				2C3B69C72A79C5E700E4A4F2 /* SongDetailView.swift in Sources */,
 				2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */,
 				2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */,
+				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,
 				2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */,
