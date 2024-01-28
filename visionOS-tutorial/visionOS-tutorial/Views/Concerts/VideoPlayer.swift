@@ -9,10 +9,6 @@ import SwiftUI
 import RealityKit
 import AVKit
 
-import SwiftUI
-import RealityKit
-import AVKit
-
 struct VideoPlayer: View {
     
     @Environment(ViewModel.self) private var model

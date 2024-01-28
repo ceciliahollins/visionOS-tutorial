@@ -20,12 +20,18 @@ struct VisionProFirstProjectApp: App {
         }
         .windowStyle(.plain)
         
-        
+        // TODO: combine detail windows into one window
         WindowGroup(id: "songDetails") {
             SongDetailView()
                 .environment(model)
         }
         .windowStyle(.plain)
+        
+        WindowGroup(id: "concertControls") {
+            ConcertControlsView()
+        }
+        .windowStyle(.plain)
+        .defaultSize(width: 100, height: 50)
         
         ImmersiveSpace(id: "concertVideo") {
             VideoPlayer()

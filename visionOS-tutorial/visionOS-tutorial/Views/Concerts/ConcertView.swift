@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import RealityKit
-import AVKit
 
 struct ConcertView: View {
     
@@ -37,6 +35,7 @@ struct ConcertView: View {
                             await openImmersiveSpace(id: "concertVideo")
                             dismissWindow(id: "library")
                         }
+                        openWindow(id: "concertControls")
                     }, label: {
                         Text(song.songName)
                     })
