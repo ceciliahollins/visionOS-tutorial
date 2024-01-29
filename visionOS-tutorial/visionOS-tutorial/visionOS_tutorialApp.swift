@@ -24,6 +24,9 @@ struct VisionProFirstProjectApp: App {
         WindowGroup(id: "songDetails") {
             SongDetailView()
                 .environment(model)
+                .visualEffect { content, geometryProxy in
+                    content.offset(z: 400)
+                }
         }
         .windowStyle(.plain)
         
@@ -37,6 +40,6 @@ struct VisionProFirstProjectApp: App {
             VideoPlayer()
                 .environment(model)
         }
-        .immersionStyle(selection: .constant(.progressive), in: .progressive)
+        .immersionStyle(selection: .constant(.full), in: .full)
     }
 }

@@ -11,11 +11,11 @@ struct PlaylistView: View {
     
     var playlist: Playlist
     @State private var playlistRowIsFocused: Bool = false
-    @State private var showSongDetails: Bool = false
     
     @Environment(ViewModel.self) private var model
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
+    @Environment(\.isPresented) private var isPresented
     
     var body: some View {
         @Bindable var model = model
@@ -29,9 +29,6 @@ struct PlaylistView: View {
                     
                     songRow
                         .padding(.leading)
-                }
-                .onChange(of: showSongDetails) { _, newValue in
-                    openWindow(id: "songDetails")
                 }
             }
         }
@@ -67,9 +64,9 @@ struct PlaylistView: View {
             VStack(spacing: 0) {
                 ForEach(playlist.songs, id: \.songTitle) { song in
                     Button(action: {
-                        showSongDetails = true
                         model.currPlayingSong = song
                         model.currPlayingPlaylist = playlist
+                        openWindow(id: "songDetails")
                     }, label: {
                         HStack {
                             Image(systemName: playlistRowIsFocused ? "play" : "ellipsis")
@@ -101,22 +98,6 @@ struct PlaylistView: View {
                     })
                 }
             }
-        }
-    }
-    
-    var songDetails: some View {
-        VStack {
-            SongDetailView()
-            
-            Button(action: {
-                showSongDetails = false
-            }, label: {
-                Text("Close")
-                    .font(.caption)
-            })
-        }
-        .visualEffect { content, geometryProxy in
-            content.offset(z: 400)
         }
     }
 }

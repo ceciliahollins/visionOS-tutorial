@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// 2
 struct SongDetailView: View {
     
     @Environment(ViewModel.self) private var model
@@ -27,7 +26,6 @@ struct SongDetailView: View {
             })
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 15, height: 0)))
             .frame(width: 400, height: 400)
-            .glassBackgroundEffect()
     }
     
     var songDetails: some View {
