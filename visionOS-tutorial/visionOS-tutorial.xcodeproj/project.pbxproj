@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */; };
+		2C08ECE02B6AEE6000DDE0BC /* EasyLife in Resources */ = {isa = PBXBuildFile; fileRef = 2C08ECDD2B6AEE6000DDE0BC /* EasyLife */; };
+		2C08ECE12B6AEE6000DDE0BC /* EltonJohn in Resources */ = {isa = PBXBuildFile; fileRef = 2C08ECDE2B6AEE6000DDE0BC /* EltonJohn */; };
+		2C08ECE22B6AEE6000DDE0BC /* OceanAlley in Resources */ = {isa = PBXBuildFile; fileRef = 2C08ECDF2B6AEE6000DDE0BC /* OceanAlley */; };
+		2C08ECE42B6AF01000DDE0BC /* GlassAnimals in Resources */ = {isa = PBXBuildFile; fileRef = 2C08ECE32B6AF01000DDE0BC /* GlassAnimals */; };
 		2C3B69A92A79C4B200E4A4F2 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3B69A82A79C4B200E4A4F2 /* RealityKitContent */; };
 		2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */; };
 		2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */; };
@@ -20,9 +24,6 @@
 		2C3B69CE2A79C60000E4A4F2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */; };
 		2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */; };
 		2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */; };
-		2CCFAEE42B608575000A62A7 /* GlassAnimals_HeatWaves.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CCFAEE22B608574000A62A7 /* GlassAnimals_HeatWaves.MOV */; };
-		2CCFAEE52B608575000A62A7 /* GlassAnimals_TheOtherSideOfParadise.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CCFAEE32B608575000A62A7 /* GlassAnimals_TheOtherSideOfParadise.MOV */; };
-		2CFBC2522B54DC2C00B570E0 /* GlassAnimals_Gooey.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFBC2512B54DC2C00B570E0 /* GlassAnimals_Gooey.MOV */; };
 		2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2532B54DCB300B570E0 /* ConcertView.swift */; };
 		2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2552B54FB6B00B570E0 /* Concert.swift */; };
 		2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC25A2B55002200B570E0 /* MyConcerts.swift */; };
@@ -30,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertControlsView.swift; sourceTree = "<group>"; };
+		2C08ECDD2B6AEE6000DDE0BC /* EasyLife */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EasyLife; sourceTree = "<group>"; };
+		2C08ECDE2B6AEE6000DDE0BC /* EltonJohn */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EltonJohn; sourceTree = "<group>"; };
+		2C08ECDF2B6AEE6000DDE0BC /* OceanAlley */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OceanAlley; sourceTree = "<group>"; };
+		2C08ECE32B6AF01000DDE0BC /* GlassAnimals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GlassAnimals; sourceTree = "<group>"; };
 		2C3B69A32A79C4B200E4A4F2 /* visionOS-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "visionOS-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B69A72A79C4B200E4A4F2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionOS_tutorialApp.swift; sourceTree = "<group>"; };
@@ -43,9 +48,6 @@
 		2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
 		2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
-		2CCFAEE22B608574000A62A7 /* GlassAnimals_HeatWaves.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlassAnimals_HeatWaves.MOV; sourceTree = "<group>"; };
-		2CCFAEE32B608575000A62A7 /* GlassAnimals_TheOtherSideOfParadise.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlassAnimals_TheOtherSideOfParadise.MOV; sourceTree = "<group>"; };
-		2CFBC2512B54DC2C00B570E0 /* GlassAnimals_Gooey.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlassAnimals_Gooey.MOV; sourceTree = "<group>"; };
 		2CFBC2532B54DCB300B570E0 /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 		2CFBC2552B54FB6B00B570E0 /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 		2CFBC25A2B55002200B570E0 /* MyConcerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcerts.swift; sourceTree = "<group>"; };
@@ -139,20 +141,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2CCFAEE12B6083E0000A62A7 /* GlassAnimals */ = {
-			isa = PBXGroup;
-			children = (
-				2CCFAEE22B608574000A62A7 /* GlassAnimals_HeatWaves.MOV */,
-				2CCFAEE32B608575000A62A7 /* GlassAnimals_TheOtherSideOfParadise.MOV */,
-				2CFBC2512B54DC2C00B570E0 /* GlassAnimals_Gooey.MOV */,
-			);
-			path = GlassAnimals;
-			sourceTree = "<group>";
-		};
 		2CFBC2502B54D76200B570E0 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				2CCFAEE12B6083E0000A62A7 /* GlassAnimals */,
+				2C08ECE32B6AF01000DDE0BC /* GlassAnimals */,
+				2C08ECDD2B6AEE6000DDE0BC /* EasyLife */,
+				2C08ECDE2B6AEE6000DDE0BC /* EltonJohn */,
+				2C08ECDF2B6AEE6000DDE0BC /* OceanAlley */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -246,11 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCFAEE42B608575000A62A7 /* GlassAnimals_HeatWaves.MOV in Resources */,
-				2CCFAEE52B608575000A62A7 /* GlassAnimals_TheOtherSideOfParadise.MOV in Resources */,
 				2C3B69B22A79C4B300E4A4F2 /* Preview Assets.xcassets in Resources */,
-				2CFBC2522B54DC2C00B570E0 /* GlassAnimals_Gooey.MOV in Resources */,
+				2C08ECE12B6AEE6000DDE0BC /* EltonJohn in Resources */,
+				2C08ECE02B6AEE6000DDE0BC /* EasyLife in Resources */,
+				2C08ECE42B6AF01000DDE0BC /* GlassAnimals in Resources */,
 				2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */,
+				2C08ECE22B6AEE6000DDE0BC /* OceanAlley in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
