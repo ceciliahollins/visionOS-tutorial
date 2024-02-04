@@ -39,6 +39,7 @@ struct MusicNavigationView: View {
                 
                 switch model.currNavigationView {
                 case .library:
+                    // TODO: visionOS is having binding issues with using the model directly, figure out why
                     List(selection: $selectedPlaylist) {
                         ForEach(model.myLibrary.library, id: \.id) { playlist in
                             NavigationLink(value: playlist) {
@@ -48,6 +49,7 @@ struct MusicNavigationView: View {
                         }
                     }
                 case .concerts:
+                    // TODO: visionOS is having binding issues with using the model directly, figure out why
                     List(selection: $selectedConcert) {
                         ForEach(model.myConcerts.concerts, id: \.id) { concert in
                             NavigationLink(value: concert) {
@@ -64,10 +66,7 @@ struct MusicNavigationView: View {
             switch model.currNavigationView {
             case .library:
                 PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0])
-                    .environment(model)
-                    .toolbar(.hidden, for: .navigationBar)
             case .concerts:
-                EmptyView()
                 ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
             }
         }

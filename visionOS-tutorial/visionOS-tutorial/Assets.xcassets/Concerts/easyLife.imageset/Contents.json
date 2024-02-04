@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "easyLife.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

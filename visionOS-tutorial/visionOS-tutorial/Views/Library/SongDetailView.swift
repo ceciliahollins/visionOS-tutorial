@@ -33,7 +33,7 @@ struct SongDetailView: View {
             Text("PLAYING FROM PLAYLIST")
                 .font(.headline)
                 .foregroundStyle(.secondary)
-            Text(model.currPlayingPlaylist.title)
+            Text(model.currSelectedPlaylist.title)
                 .font(.title)
                 .bold()
                 .foregroundStyle(.secondary)

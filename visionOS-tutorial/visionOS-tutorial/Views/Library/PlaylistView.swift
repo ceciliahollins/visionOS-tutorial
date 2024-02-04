@@ -33,6 +33,7 @@ struct PlaylistView: View {
             }
         }
         .padding()
+        .toolbar(.hidden, for: .navigationBar)
     }
     
     var playlistHeader: some View {
@@ -64,8 +65,9 @@ struct PlaylistView: View {
             VStack(spacing: 0) {
                 ForEach(playlist.songs, id: \.songTitle) { song in
                     Button(action: {
+                        // TODO: this should not be manually set- see MusicNavigationView
+                        model.currSelectedPlaylist = playlist
                         model.currPlayingSong = song
-                        model.currPlayingPlaylist = playlist
                         openWindow(id: "songDetails")
                     }, label: {
                         HStack {
@@ -104,6 +106,6 @@ struct PlaylistView: View {
 
 #Preview {
     PlaylistView(playlist: MyLibrary.createSeventiesPlaylist())
-        .environment(ViewModel())
         .glassBackgroundEffect()
+        .environment(ViewModel())
 }

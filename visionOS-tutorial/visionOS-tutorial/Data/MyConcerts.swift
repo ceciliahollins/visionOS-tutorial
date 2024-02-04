@@ -13,6 +13,9 @@ struct MyConcerts {
     
     init() {
         concerts.append(MyConcerts.createGlassAnimalsConcert())
+        concerts.append(MyConcerts.createEasyLifeConcert())
+        concerts.append(MyConcerts.createEltonJohnConcert())
+        concerts.append(MyConcerts.createOceanAlleyConcert())
     }
     
     static func createGlassAnimalsConcert() -> Concert {
@@ -24,5 +27,38 @@ struct MyConcerts {
                        songs: [one, two, three],
                        imageThumbnail: "glassAnimals",
                        imageHeader: "glassAnimalsHeader")
+    }
+    
+    static func createEasyLifeConcert() -> Concert {
+        let one = ConcertSong(songName: "Sangria", videoName: "EasyLife_Sangria")
+        let two = ConcertSong(songName: "Peanut Butter", videoName: "EasyLife_PeanutButter")
+        let three = ConcertSong(songName: "Petty Crimes", videoName: "EasyLife_PettyCrimes")
+        
+        return Concert(artist: "Easy Life",
+                       songs: [one, two, three],
+                       imageThumbnail: "easyLife",
+                       imageHeader: "easyLifeHeader")
+    }
+    
+    static func createEltonJohnConcert() -> Concert {
+        let one = ConcertSong(songName: "Bennie and the Jets", videoName: "EltonJohn_BennieAndTheJets")
+        let two = ConcertSong(songName: "Rocket Man", videoName: "EltonJohn_RocketMan")
+        let three = ConcertSong(songName: "Crocodile Rock", videoName: "EltonJohn_CrocodileRock")
+        
+        return Concert(artist: "Elton John",
+                       songs: [one, two, three],
+                       imageThumbnail: "eltonJohn",
+                       imageHeader: "eltonJohnHeader")
+    }
+    
+    static func createOceanAlleyConcert() -> Concert {
+        let one = ConcertSong(songName: "Confidence", videoName: "OceanAlley_Confidence")
+        let two = ConcertSong(songName: "Baby Come Back", videoName: "OceanAlley_BabyComeBack")
+        let three = ConcertSong(songName: "Knees", videoName: "OceanAlley_Knees")
+        
+        return Concert(artist: "Ocean Alley",
+                       songs: [one, two, three],
+                       imageThumbnail: "oceanAlley",
+                       imageHeader: "oceanAlleyHeader")
     }
 }
