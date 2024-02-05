@@ -18,7 +18,7 @@ class ViewModel {
     
     var myConcerts: MyConcerts = MyConcerts()
     var currSelectedConcert: Concert = Concert(artist: "", songs: [], imageThumbnail: "", imageHeader: "")
-    var currPlayingVideo: ConcertSong = ConcertSong(songName: "", videoName: "")
+    var currPlayingVideo: ConcertSong = ConcertSong(songName: "", videoName: "", thumbnailColor: Color.white)
 }
 
 enum MusicNavigation {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ConcertView: View {
     
@@ -19,14 +20,15 @@ struct ConcertView: View {
     @Environment(\.dismissWindow) private var dismissWindow
     
     var body: some View {
-        GeometryReader { proxy in
+        GeometryReader { geo in
             VStack(spacing: 0) {
                 header
                 Spacer()
                 concertRow
+                    .frame(maxHeight: geo.size.height * 0.3)
             }
             .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
-            .cornerRadius(50)
+            .cornerRadius(40)
             .padding(20)
         }
         .toolbar(.hidden, for: .navigationBar)
@@ -54,7 +56,6 @@ struct ConcertView: View {
         @Bindable var model = model
         
         return HStack(spacing: 0) {
-                Spacer()
                 ForEach(concert.songs, id: \.songName) { song in
                     Button(action: {
                         // TODO: this should not be manually set- see MusicNavigationView
@@ -67,17 +68,24 @@ struct ConcertView: View {
                         }
                         openWindow(id: "concertControls")
                     }, label: {
-                        Text(song.songName)
+                        ZStack(alignment: .bottomLeading) {
+                            RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
+                                .fill(song.thumbnailColor)
+                            
+                            Text(song.songName)
+                                .font(.title)
+                                .multilineTextAlignment(.leading)
+                                .padding()
+                        }
                     })
                     .buttonStyle(.borderless)
                     .buttonBorderShape(.roundedRectangle(radius: 20))
                     .onHover(perform: { hovering in
                         concertRowIsFocused = hovering
                     })
-                    Spacer()
                 }
-            }
-            .padding()
+        }
+        .padding()
     }
 }
 

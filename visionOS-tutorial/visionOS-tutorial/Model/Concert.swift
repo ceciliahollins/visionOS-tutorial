@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Concert: Identifiable, Hashable {
     let id = UUID()
@@ -18,4 +19,5 @@ struct Concert: Identifiable, Hashable {
 struct ConcertSong: Hashable {
     let songName: String
     let videoName: String
+    let thumbnailColor: Color
 }
