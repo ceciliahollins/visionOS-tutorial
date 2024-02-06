@@ -26,6 +26,7 @@ struct ConcertView: View {
                 Spacer()
                 concertRow
                     .frame(maxHeight: geo.size.height * 0.3)
+                Spacer()
             }
             .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
             .cornerRadius(40)
@@ -42,7 +43,7 @@ struct ConcertView: View {
                 .resizable()
                 .scaledToFit()
                 .overlay {
-                    LinearGradient(colors: [Color.black, Color.clear], startPoint: .bottom, endPoint: .center)
+                    LinearGradient(colors: [averageColorFromImage(concert.imageHeader) ?? .black, .clear], startPoint: .bottom, endPoint: .center)
                 }
             
             Text(concert.artist)
@@ -78,8 +79,10 @@ struct ConcertView: View {
                                 .padding()
                         }
                     })
+                    .buttonBorderShape(.roundedRectangle(radius: 10))
                     .buttonStyle(.borderless)
-                    .buttonBorderShape(.roundedRectangle(radius: 20))
+                    .padding(.horizontal)
+                    .hoverEffectDisabled()
                     .onHover(perform: { hovering in
                         concertRowIsFocused = hovering
                     })
