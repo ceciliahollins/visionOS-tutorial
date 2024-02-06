@@ -17,7 +17,6 @@ struct ConcertControlsView: View {
         VStack {
             Button {
                 Task {
-                    // TODO: add error handling
                     await dismissImmersiveSpace()
                     dismissWindow(id: "concertControls")
                 }

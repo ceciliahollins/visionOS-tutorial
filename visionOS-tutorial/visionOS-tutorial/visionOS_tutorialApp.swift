@@ -20,13 +20,9 @@ struct VisionProFirstProjectApp: App {
         }
         .windowStyle(.plain)
         
-        // TODO: combine detail windows into one window
         WindowGroup(id: "songDetails") {
             SongDetailView()
                 .environment(model)
-                .visualEffect { content, geometryProxy in
-                    content.offset(z: 400)
-                }
         }
         .windowStyle(.plain)
         

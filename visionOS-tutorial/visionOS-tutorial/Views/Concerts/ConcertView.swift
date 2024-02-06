@@ -63,9 +63,9 @@ struct ConcertView: View {
                         model.currSelectedConcert = concert
                         model.currPlayingVideo = song
                         Task {
-                            // TODO: add error handling
                             await openImmersiveSpace(id: "concertVideo")
                             dismissWindow(id: "library")
+                            dismissWindow(id: "songDetails")
                         }
                         openWindow(id: "concertControls")
                     }, label: {
