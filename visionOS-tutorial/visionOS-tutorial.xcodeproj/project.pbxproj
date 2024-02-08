@@ -101,7 +101,6 @@
 		2C3B69A52A79C4B200E4A4F2 /* visionOS-tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				2CFBC2502B54D76200B570E0 /* Videos */,
 				2C3B69C02A79C5B100E4A4F2 /* Views */,
 				2C3B69BF2A79C5AC00E4A4F2 /* Model */,
 				2C3B69BE2A79C5A700E4A4F2 /* Data */,
@@ -131,6 +130,7 @@
 		2C3B69BE2A79C5A700E4A4F2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2CFBC2502B54D76200B570E0 /* Videos */,
 				2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */,
 				2CFBC25A2B55002200B570E0 /* MyConcerts.swift */,
 			);
