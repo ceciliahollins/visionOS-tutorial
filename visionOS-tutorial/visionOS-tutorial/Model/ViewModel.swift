@@ -14,7 +14,7 @@ class ViewModel {
     
     var myLibrary: MyLibrary = MyLibrary()
     var currSelectedPlaylist: Playlist = Playlist(title: "", description: "", coverImage: "", songs: [])
-    var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "")
+    var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "", audioFileName: "")
     
     var myConcerts: MyConcerts = MyConcerts()
     var currSelectedConcert: Concert = Concert(artist: "", songs: [], imageThumbnail: "", imageHeader: "")

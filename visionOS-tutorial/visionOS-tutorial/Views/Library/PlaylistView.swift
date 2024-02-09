@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct PlaylistView: View {
     
     var playlist: Playlist
+    var audioPlayer: AudioPlayer
+    
     @State private var playlistRowIsFocused: Bool = false
     
     @Environment(ViewModel.self) private var model
@@ -69,6 +72,7 @@ struct PlaylistView: View {
                         model.currSelectedPlaylist = playlist
                         model.currPlayingSong = song
                         openWindow(id: "songDetails")
+                        audioPlayer.playMusic(song.audioFileName)
                     }, label: {
                         HStack {
                             Image(systemName: playlistRowIsFocused ? "play" : "ellipsis")
@@ -105,7 +109,8 @@ struct PlaylistView: View {
 }
 
 #Preview {
-    PlaylistView(playlist: MyLibrary.createSeventiesPlaylist())
-        .glassBackgroundEffect()
-        .environment(ViewModel())
+    PlaylistView(playlist: MyLibrary.createSeventiesPlaylist(),
+                 audioPlayer: AudioPlayer())
+    .glassBackgroundEffect()
+    .environment(ViewModel())
 }

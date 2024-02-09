@@ -20,4 +20,5 @@ struct Song: Hashable {
     let artist: String
     let albumCover: String
     let songLength: String
+    let audioFileName: String
 }
