@@ -46,6 +46,8 @@
 		2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */; };
 		2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */; };
 		2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */; };
+		2C6E96D72B75F226001C0225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D62B75F226001C0225 /* MainView.swift */; };
+		2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D82B7965F9001C0225 /* ControlsBar.swift */; };
 		2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2532B54DCB300B570E0 /* ConcertView.swift */; };
 		2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2552B54FB6B00B570E0 /* Concert.swift */; };
 		2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC25A2B55002200B570E0 /* MyConcerts.swift */; };
@@ -104,6 +106,8 @@
 		2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
 		2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		2C6E96D62B75F226001C0225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C6E96D82B7965F9001C0225 /* ControlsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsBar.swift; sourceTree = "<group>"; };
 		2CFBC2532B54DCB300B570E0 /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 		2CFBC2552B54FB6B00B570E0 /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 		2CFBC25A2B55002200B570E0 /* MyConcerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcerts.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 		2C3B69BF2A79C5AC00E4A4F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */,
 				2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */,
 				2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */,
 				2CFBC2552B54FB6B00B570E0 /* Concert.swift */,
@@ -203,6 +208,8 @@
 		2C3B69C02A79C5B100E4A4F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E96D62B75F226001C0225 /* MainView.swift */,
+				2C6E96D82B7965F9001C0225 /* ControlsBar.swift */,
 				2CFBC2592B54FFD000B570E0 /* Concerts */,
 				2CFBC2582B54FFC000B570E0 /* Library */,
 				2CFBC2572B54FEBF00B570E0 /* Navigation */,
@@ -307,7 +314,6 @@
 			children = (
 				2C3B69C12A79C5E700E4A4F2 /* PlaylistView.swift */,
 				2C3B69C32A79C5E700E4A4F2 /* SongDetailView.swift */,
-				2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */,
 				2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */,
 				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
+				2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,
 				2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */,
@@ -485,6 +492,7 @@
 				2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */,
 				2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */,
 				2C3B69CA2A79C5F400E4A4F2 /* ViewModel.swift in Sources */,
+				2C6E96D72B75F226001C0225 /* MainView.swift in Sources */,
 				2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

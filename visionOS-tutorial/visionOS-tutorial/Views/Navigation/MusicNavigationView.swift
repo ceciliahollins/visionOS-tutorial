@@ -12,8 +12,7 @@ import RealityKitContent
 struct MusicNavigationView: View {
     
     @Environment(ViewModel.self) private var model
-    
-    var audioPlayer: AudioPlayer = AudioPlayer()
+    @Environment(AudioPlayer.self) private var audioPlayer
     
     @State private var selectedPlaylist: Playlist?
     @State private var selectedConcert: Concert?
@@ -68,8 +67,7 @@ struct MusicNavigationView: View {
         } detail: {
             switch model.currNavigationView {
             case .library:
-                PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0],
-                             audioPlayer: audioPlayer)
+                PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0])
             case .concerts:
                 ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
             }
@@ -80,4 +78,5 @@ struct MusicNavigationView: View {
 #Preview {
     MusicNavigationView()
         .environment(ViewModel())
+        .environment(AudioPlayer())
 }

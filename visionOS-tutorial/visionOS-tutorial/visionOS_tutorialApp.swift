@@ -12,11 +12,20 @@ import AVFoundation
 struct VisionProFirstProjectApp: App {
     
     @State private var model = ViewModel()
+    @State private var audioPlayer: AudioPlayer = AudioPlayer()
+    
+    init() {
+        // give an initial song to play on first load
+        model.currPlayingSong = MyLibrary.createSeventiesPlaylist().songs.first!
+        // load up the new song to the audio player
+        audioPlayer.loadSong(model.currPlayingSong.audioFileName)
+    }
     
     var body: some Scene {
         WindowGroup(id: "library") {
-            MusicNavigationView()
+            MainView()
                 .environment(model)
+                .environment(audioPlayer)
         }
         .windowStyle(.plain)
         
