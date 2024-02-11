@@ -27,7 +27,8 @@ struct ConcertView: View {
         }
         .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
         .cornerRadius(40)
-        .padding(20)
+        .padding([.horizontal, .top], 20)
+        .padding(.bottom, 100)
         .toolbar(.hidden, for: .navigationBar)
     }
     
@@ -80,6 +81,7 @@ struct ConcertView: View {
                                 HStack {
                                     Text(song.songName)
                                         .font(.title)
+                                        .lineLimit(1)
                                     Spacer()
                                 }
                             }
