@@ -20,18 +20,14 @@ struct ConcertView: View {
     @Environment(\.dismissWindow) private var dismissWindow
     
     var body: some View {
-        GeometryReader { geo in
-            VStack(spacing: 0) {
-                header
-                Spacer()
-                concertRow
-                    .frame(maxHeight: geo.size.height * 0.3)
-                Spacer()
-            }
-            .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
-            .cornerRadius(40)
-            .padding(20)
+        VStack(spacing: 0) {
+            header
+            concertRow
+                .padding()
         }
+        .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
+        .cornerRadius(40)
+        .padding(20)
         .toolbar(.hidden, for: .navigationBar)
     }
     
@@ -69,14 +65,25 @@ struct ConcertView: View {
                         }
                         openWindow(id: "concertControls")
                     }, label: {
-                        ZStack(alignment: .bottomLeading) {
+                        ZStack {
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .fill(song.thumbnailColor)
+                                .fill(averageColorFromImage(song.concertImage) ?? .white)
                             
-                            Text(song.songName)
-                                .font(.title)
-                                .multilineTextAlignment(.leading)
-                                .padding()
+                            VStack {
+                                Image(song.concertImage)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(5)
+                                
+                                Spacer()
+                                
+                                HStack {
+                                    Text(song.songName)
+                                        .font(.title)
+                                    Spacer()
+                                }
+                            }
+                            .padding()
                         }
                     })
                     .buttonBorderShape(.roundedRectangle(radius: 10))

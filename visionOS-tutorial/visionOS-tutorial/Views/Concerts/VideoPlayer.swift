@@ -21,6 +21,8 @@ struct VideoPlayer: View {
     }
     
     func makeVideoEntity() -> Entity {
+        @Bindable var model = model
+        
         // create the video entity
         let videoEntity = Entity()
 
