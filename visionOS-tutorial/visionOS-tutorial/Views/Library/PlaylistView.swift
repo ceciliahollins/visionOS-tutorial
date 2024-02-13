@@ -6,20 +6,17 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct PlaylistView: View {
     
-    var playlist: Playlist
+    var playlist: Playlist    
     @State private var playlistRowIsFocused: Bool = false
     
     @Environment(ViewModel.self) private var model
-    @Environment(\.openWindow) private var openWindow
-    @Environment(\.dismissWindow) private var dismissWindow
-    @Environment(\.isPresented) private var isPresented
+    @Environment(AudioPlayer.self) private var audioPlayer
     
     var body: some View {
-        @Bindable var model = model
-        
         GeometryReader { proxy in
             ZStack {
                 VStack(alignment: .leading) {
@@ -59,19 +56,15 @@ struct PlaylistView: View {
     }
     
     var songRow: some View {
-        @Bindable var model = model
-        
         return ScrollView {
             VStack(spacing: 0) {
                 ForEach(playlist.songs, id: \.songTitle) { song in
                     Button(action: {
-                        // TODO: this should not be manually set- see MusicNavigationView
-                        model.currSelectedPlaylist = playlist
-                        model.currPlayingSong = song
-                        openWindow(id: "songDetails")
+                        playNewSelectedSong(song)
                     }, label: {
                         HStack {
-                            Image(systemName: playlistRowIsFocused ? "play" : "ellipsis")
+                            Image(systemName: "play.fill")
+                                .foregroundStyle(playlistRowIsFocused ? .white : .clear)
                                 .padding(.trailing)
                             
                             Image(song.albumCover)
@@ -96,16 +89,28 @@ struct PlaylistView: View {
                     .buttonStyle(.borderless)
                     .buttonBorderShape(.roundedRectangle(radius: 20))
                     .onHover(perform: { hovering in
+                        // TODO: this does not seem to get hit
                         playlistRowIsFocused = hovering
                     })
                 }
             }
         }
     }
+    
+    func playNewSelectedSong(_ song: Song) {
+        @Bindable var model = model
+        @Bindable var audioPlayer = audioPlayer
+        // TODO: currSelectedPlaylist should not be manually set- see MusicNavigationView
+        model.currSelectedPlaylist = playlist
+        model.currPlayingSong = song
+        audioPlayer.loadSong(song.audioFileName)
+        audioPlayer.play()
+    }
 }
 
 #Preview {
     PlaylistView(playlist: MyLibrary.createSeventiesPlaylist())
-        .glassBackgroundEffect()
-        .environment(ViewModel())
+    .glassBackgroundEffect()
+    .environment(ViewModel())
+    .environment(AudioPlayer())
 }

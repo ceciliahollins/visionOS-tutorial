@@ -29,7 +29,9 @@ struct SongDetailView: View {
     }
     
     var songDetails: some View {
-        VStack(alignment: .leading) {
+        @Bindable var model = model
+        
+        return VStack(alignment: .leading) {
             Text("PLAYING FROM PLAYLIST")
                 .font(.headline)
                 .foregroundStyle(.secondary)

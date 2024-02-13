@@ -19,7 +19,35 @@
 		2C3B69CA2A79C5F400E4A4F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */; };
 		2C3B69CE2A79C60000E4A4F2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */; };
 		2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */; };
+		2C4101AD2B75A52B00CC3665 /* BillyJoel_Vienna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101A82B75A52B00CC3665 /* BillyJoel_Vienna.mp3 */; };
+		2C4101AE2B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101A92B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 */; };
+		2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101AA2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 */; };
+		2C4101B02B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101AB2B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 */; };
+		2C4101B12B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101AC2B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 */; };
+		2C4101BB2B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101B62B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 */; };
+		2C4101BC2B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101B72B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 */; };
+		2C4101BD2B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101B82B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 */; };
+		2C4101BE2B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101B92B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 */; };
+		2C4101BF2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101BA2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 */; };
+		2C4101C52B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101C02B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 */; };
+		2C4101C62B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101C12B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 */; };
+		2C4101C72B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101C22B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 */; };
+		2C4101C82B75AFF700CC3665 /* TheKooks_Naive.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101C32B75AFF700CC3665 /* TheKooks_Naive.mp3 */; };
+		2C4101C92B75AFF700CC3665 /* TheStrokes_LastNite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101C42B75AFF700CC3665 /* TheStrokes_LastNite.mp3 */; };
+		2C4101CF2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101CA2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 */; };
+		2C4101D02B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101CB2B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 */; };
+		2C4101D12B75B00300CC3665 /* JasonMraz_ImYours.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101CC2B75B00300CC3665 /* JasonMraz_ImYours.mp3 */; };
+		2C4101D22B75B00300CC3665 /* JohnMayer_Gravity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101CD2B75B00300CC3665 /* JohnMayer_Gravity.mp3 */; };
+		2C4101D32B75B00300CC3665 /* Maroon5_SundayMorning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101CE2B75B00300CC3665 /* Maroon5_SundayMorning.mp3 */; };
+		2C4101D92B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D42B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 */; };
+		2C4101DA2B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D52B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 */; };
+		2C4101DB2B75B00D00CC3665 /* Jungle_BackOn74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D62B75B00D00CC3665 /* Jungle_BackOn74.mp3 */; };
+		2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */; };
+		2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */; };
+		2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */; };
 		2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */; };
+		2C6E96D72B75F226001C0225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D62B75F226001C0225 /* MainView.swift */; };
+		2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D82B7965F9001C0225 /* ControlsBar.swift */; };
 		2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2532B54DCB300B570E0 /* ConcertView.swift */; };
 		2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2552B54FB6B00B570E0 /* Concert.swift */; };
 		2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC25A2B55002200B570E0 /* MyConcerts.swift */; };
@@ -51,7 +79,35 @@
 		2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
+		2C4101A82B75A52B00CC3665 /* BillyJoel_Vienna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BillyJoel_Vienna.mp3; sourceTree = "<group>"; };
+		2C4101A92B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Eagles_OneOfTheseNights.mp3; sourceTree = "<group>"; };
+		2C4101AA2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EltonJohn_BennieAndTheJets.mp3; sourceTree = "<group>"; };
+		2C4101AB2B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Toploader_DancingInTheMoonlight.mp3; sourceTree = "<group>"; };
+		2C4101AC2B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FleetwoodMac_Dreams.mp3; sourceTree = "<group>"; };
+		2C4101B62B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OceanAlley_Confidence.mp3; sourceTree = "<group>"; };
+		2C4101B72B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SpaceyJane_BoosterSeat.mp3; sourceTree = "<group>"; };
+		2C4101B82B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StickyFingers_GoldSnafu.mp3; sourceTree = "<group>"; };
+		2C4101B92B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StillWoozy_GoodieBag.mp3; sourceTree = "<group>"; };
+		2C4101BA2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WinstonSurfshirt_BeAboutYou.mp3; sourceTree = "<group>"; };
+		2C4101C02B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FranzFerdinand_TakeMeOut.mp3; sourceTree = "<group>"; };
+		2C4101C12B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jet_AreYouGonnaBeMyGirl.mp3; sourceTree = "<group>"; };
+		2C4101C22B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ArcticMonkeys_DoIWannaKnow.mp3; sourceTree = "<group>"; };
+		2C4101C32B75AFF700CC3665 /* TheKooks_Naive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheKooks_Naive.mp3; sourceTree = "<group>"; };
+		2C4101C42B75AFF700CC3665 /* TheStrokes_LastNite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheStrokes_LastNite.mp3; sourceTree = "<group>"; };
+		2C4101CA2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JackJohnson_BananaPancakes.mp3; sourceTree = "<group>"; };
+		2C4101CB2B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CorinneBaileyRae_PutYourRecordsOn.mp3; sourceTree = "<group>"; };
+		2C4101CC2B75B00300CC3665 /* JasonMraz_ImYours.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JasonMraz_ImYours.mp3; sourceTree = "<group>"; };
+		2C4101CD2B75B00300CC3665 /* JohnMayer_Gravity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JohnMayer_Gravity.mp3; sourceTree = "<group>"; };
+		2C4101CE2B75B00300CC3665 /* Maroon5_SundayMorning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Maroon5_SundayMorning.mp3; sourceTree = "<group>"; };
+		2C4101D42B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AndersonPaak_HeartDontStandAChance.mp3; sourceTree = "<group>"; };
+		2C4101D52B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ChildishGambino_Redbone.mp3; sourceTree = "<group>"; };
+		2C4101D62B75B00D00CC3665 /* Jungle_BackOn74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jungle_BackOn74.mp3; sourceTree = "<group>"; };
+		2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
+		2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
+		2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		2C6E96D62B75F226001C0225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C6E96D82B7965F9001C0225 /* ControlsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsBar.swift; sourceTree = "<group>"; };
 		2CFBC2532B54DCB300B570E0 /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 		2CFBC2552B54FB6B00B570E0 /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 		2CFBC25A2B55002200B570E0 /* MyConcerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcerts.swift; sourceTree = "<group>"; };
@@ -101,7 +157,6 @@
 		2C3B69A52A79C4B200E4A4F2 /* visionOS-tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				2CFBC2502B54D76200B570E0 /* Videos */,
 				2C3B69C02A79C5B100E4A4F2 /* Views */,
 				2C3B69BF2A79C5AC00E4A4F2 /* Model */,
 				2C3B69BE2A79C5A700E4A4F2 /* Data */,
@@ -131,6 +186,8 @@
 		2C3B69BE2A79C5A700E4A4F2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2C4101A42B75A37100CC3665 /* Audio */,
+				2CFBC2502B54D76200B570E0 /* Videos */,
 				2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */,
 				2CFBC25A2B55002200B570E0 /* MyConcerts.swift */,
 			);
@@ -140,6 +197,7 @@
 		2C3B69BF2A79C5AC00E4A4F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */,
 				2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */,
 				2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */,
 				2CFBC2552B54FB6B00B570E0 /* Concert.swift */,
@@ -150,11 +208,85 @@
 		2C3B69C02A79C5B100E4A4F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C6E96D62B75F226001C0225 /* MainView.swift */,
+				2C6E96D82B7965F9001C0225 /* ControlsBar.swift */,
 				2CFBC2592B54FFD000B570E0 /* Concerts */,
 				2CFBC2582B54FFC000B570E0 /* Library */,
 				2CFBC2572B54FEBF00B570E0 /* Navigation */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2C4101A42B75A37100CC3665 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101B52B75ACB300CC3665 /* FunkAndSoul */,
+				2C4101B42B75A93400CC3665 /* SoftPop */,
+				2C4101A72B75A47300CC3665 /* IndieRock */,
+				2C4101A62B75A3C100CC3665 /* AustralianSurf */,
+				2C4101A52B75A37D00CC3665 /* Seventies */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		2C4101A52B75A37D00CC3665 /* Seventies */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101A82B75A52B00CC3665 /* BillyJoel_Vienna.mp3 */,
+				2C4101A92B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 */,
+				2C4101AA2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 */,
+				2C4101AC2B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 */,
+				2C4101AB2B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 */,
+			);
+			path = Seventies;
+			sourceTree = "<group>";
+		};
+		2C4101A62B75A3C100CC3665 /* AustralianSurf */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101B62B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 */,
+				2C4101B72B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 */,
+				2C4101B82B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 */,
+				2C4101B92B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 */,
+				2C4101BA2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 */,
+			);
+			path = AustralianSurf;
+			sourceTree = "<group>";
+		};
+		2C4101A72B75A47300CC3665 /* IndieRock */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101C22B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 */,
+				2C4101C02B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 */,
+				2C4101C12B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 */,
+				2C4101C32B75AFF700CC3665 /* TheKooks_Naive.mp3 */,
+				2C4101C42B75AFF700CC3665 /* TheStrokes_LastNite.mp3 */,
+			);
+			path = IndieRock;
+			sourceTree = "<group>";
+		};
+		2C4101B42B75A93400CC3665 /* SoftPop */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101CB2B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 */,
+				2C4101CA2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 */,
+				2C4101CC2B75B00300CC3665 /* JasonMraz_ImYours.mp3 */,
+				2C4101CD2B75B00300CC3665 /* JohnMayer_Gravity.mp3 */,
+				2C4101CE2B75B00300CC3665 /* Maroon5_SundayMorning.mp3 */,
+			);
+			path = SoftPop;
+			sourceTree = "<group>";
+		};
+		2C4101B52B75ACB300CC3665 /* FunkAndSoul */ = {
+			isa = PBXGroup;
+			children = (
+				2C4101D42B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 */,
+				2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */,
+				2C4101D52B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 */,
+				2C4101D62B75B00D00CC3665 /* Jungle_BackOn74.mp3 */,
+				2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */,
+			);
+			path = FunkAndSoul;
 			sourceTree = "<group>";
 		};
 		2CFBC2502B54D76200B570E0 /* Videos */ = {
@@ -298,19 +430,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */,
+				2C4101D92B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 in Resources */,
+				2C4101BB2B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 in Resources */,
 				2CFFFE4D2B6C8761008FF0D5 /* GlassAnimals_Gooey.MOV in Resources */,
 				2C3B69B22A79C4B300E4A4F2 /* Preview Assets.xcassets in Resources */,
+				2C4101C62B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 in Resources */,
+				2C4101AD2B75A52B00CC3665 /* BillyJoel_Vienna.mp3 in Resources */,
+				2C4101C82B75AFF700CC3665 /* TheKooks_Naive.mp3 in Resources */,
+				2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
 				2CFFFE542B6C8790008FF0D5 /* EasyLife_Sangria.MOV in Resources */,
 				2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */,
+				2C4101BD2B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 in Resources */,
+				2C4101C92B75AFF700CC3665 /* TheStrokes_LastNite.mp3 in Resources */,
+				2C4101AE2B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 in Resources */,
+				2C4101C72B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 in Resources */,
+				2C4101C52B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 in Resources */,
+				2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */,
 				2CFFFE592B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV in Resources */,
+				2C4101B02B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
 				2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */,
 				2CFFFE4F2B6C8761008FF0D5 /* GlassAnimals_HeatWaves.MOV in Resources */,
+				2C4101BE2B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 in Resources */,
+				2C4101BF2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 in Resources */,
+				2C4101BC2B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 in Resources */,
 				2CFFFE5A2B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV in Resources */,
+				2C4101D02B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 in Resources */,
+				2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */,
+				2C4101CF2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 in Resources */,
+				2C4101DB2B75B00D00CC3665 /* Jungle_BackOn74.mp3 in Resources */,
 				2CFFFE552B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV in Resources */,
+				2C4101B12B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 in Resources */,
 				2CFFFE5B2B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV in Resources */,
 				2CFFFE532B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV in Resources */,
 				2CFFFE4E2B6C8761008FF0D5 /* GlassAnimals_TheOtherSideOfParadise.MOV in Resources */,
+				2C4101DA2B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 in Resources */,
+				2C4101D32B75B00300CC3665 /* Maroon5_SundayMorning.mp3 in Resources */,
+				2C4101D22B75B00300CC3665 /* JohnMayer_Gravity.mp3 in Resources */,
+				2C4101D12B75B00300CC3665 /* JasonMraz_ImYours.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +483,7 @@
 				2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */,
 				2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */,
 				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
+				2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,
 				2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */,
@@ -334,6 +492,8 @@
 				2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */,
 				2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */,
 				2C3B69CA2A79C5F400E4A4F2 /* ViewModel.swift in Sources */,
+				2C6E96D72B75F226001C0225 /* MainView.swift in Sources */,
+				2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

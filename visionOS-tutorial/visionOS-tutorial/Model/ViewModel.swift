@@ -9,16 +9,16 @@ import SwiftUI
 import Observation
 
 @Observable
-class ViewModel {
+class ViewModel {    
     var currNavigationView: MusicNavigation = .library
     
     var myLibrary: MyLibrary = MyLibrary()
     var currSelectedPlaylist: Playlist = Playlist(title: "", description: "", coverImage: "", songs: [])
-    var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "")
+    var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "", audioFileName: "")
     
     var myConcerts: MyConcerts = MyConcerts()
     var currSelectedConcert: Concert = Concert(artist: "", songs: [], imageThumbnail: "", imageHeader: "")
-    var currPlayingVideo: ConcertSong = ConcertSong(songName: "", videoName: "", thumbnailColor: Color.white)
+    var currPlayingVideo: ConcertSong = ConcertSong(songName: "", videoName: "", concertImage: "")
 }
 
 enum MusicNavigation {

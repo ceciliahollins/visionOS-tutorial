@@ -14,6 +14,7 @@ The windows demo displays playlists and lists of songs, with a new window presen
 * Native visionOS UI, including buttons, navigation lists, highlighting and focus of elements, and more.
 
 ![ImmersiveVideoDemo](https://github.com/ceciliahollins/visionOS-tutorial/blob/main/visionOSImmersiveVideoDemo.gif)
+
 The immersive video example puts the user in a concert environment and plays a video from a gig to replicate the experience of the concert. The main highlights of this feature is:
 * Dismissing windows and presenting an immersive space, as well as exiting an immersive space and presenting windows again
 * Using RealityKit and AVKit to play a video in an immersive space
@@ -44,6 +45,8 @@ hollins.cecilia@gmail.com
     * Adding immersive experience
 
 ## Acknowledgments
+
+* Thank you to [Lavanya Sood](https://github.com/lavanya-sood) for creating a beautiful app icon asset 
 
 * [Apple visionOS documentation](https://developer.apple.com/visionos/)
 * [WWWDC23 sessions](https://developer.apple.com/wwdc23/sessions/)
