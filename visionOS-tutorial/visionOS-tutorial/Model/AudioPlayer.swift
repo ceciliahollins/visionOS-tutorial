@@ -3,7 +3,7 @@ import SwiftUI
 import AVFoundation
 
 @Observable
-class AudioPlayer {
+class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     
     private var audioPlayer: AVAudioPlayer!
     
@@ -18,6 +18,7 @@ class AudioPlayer {
 
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer.delegate = self
         } catch {
             print("couldn't load the file")
         }
@@ -31,5 +32,11 @@ class AudioPlayer {
     func pause() {
         controlButtonIcon = Image(systemName: "play.fill")
         audioPlayer.pause()
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        // for now, just restart the song. Can be improved later
+        audioPlayer.currentTime = 0
+        audioPlayer.play()
     }
 }
