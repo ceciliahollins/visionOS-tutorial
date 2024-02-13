@@ -9,9 +9,7 @@ import SwiftUI
 import Observation
 
 @Observable
-class ViewModel {
-    var musicIsPlaying: Bool = false
-    
+class ViewModel {    
     var currNavigationView: MusicNavigation = .library
     
     var myLibrary: MyLibrary = MyLibrary()

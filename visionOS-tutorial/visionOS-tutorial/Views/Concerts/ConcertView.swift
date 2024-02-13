@@ -27,8 +27,7 @@ struct ConcertView: View {
         }
         .background(averageColorFromImage(concert.imageHeader) ?? Color.black)
         .cornerRadius(40)
-        .padding([.horizontal, .top], 20)
-        .padding(.bottom, 100)
+        .padding()
         .toolbar(.hidden, for: .navigationBar)
     }
     

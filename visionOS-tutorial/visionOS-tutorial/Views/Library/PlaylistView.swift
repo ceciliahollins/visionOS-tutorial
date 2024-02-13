@@ -103,7 +103,6 @@ struct PlaylistView: View {
         // TODO: currSelectedPlaylist should not be manually set- see MusicNavigationView
         model.currSelectedPlaylist = playlist
         model.currPlayingSong = song
-        model.musicIsPlaying = true
         audioPlayer.loadSong(song.audioFileName)
         audioPlayer.play()
     }

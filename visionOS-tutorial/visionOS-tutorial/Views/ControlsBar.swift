@@ -51,23 +51,20 @@ struct ControlsBar: View {
             }
             Spacer()
         }
-        .padding(.leading, 36)
+        .padding(.leading, 48)
     }
     
     var playPauseButton: some View {
-        @Bindable var model = model
         @Bindable var audioPlayer = audioPlayer
         
         return Button(action: {
-            if model.musicIsPlaying {
-                model.musicIsPlaying = false
+            if audioPlayer.isPlaying {
                 audioPlayer.pause()
             } else {
-                model.musicIsPlaying = true
                 audioPlayer.play()
             }
         }, label: {
-            Image(systemName: model.musicIsPlaying ? "pause.fill" : "play.fill")
+            audioPlayer.controlButtonIcon
                 .foregroundStyle(.white)
                 .font(.largeTitle)
         })
@@ -84,7 +81,7 @@ struct ControlsBar: View {
                     .font(.largeTitle)
             })
         }
-        .padding(.trailing, 36)
+        .padding(.trailing, 48)
     }
 }
 

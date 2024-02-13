@@ -7,6 +7,11 @@ class AudioPlayer {
     
     private var audioPlayer: AVAudioPlayer!
     
+    var controlButtonIcon = Image(systemName: "play.fill")
+    var isPlaying: Bool {
+        audioPlayer.isPlaying
+    }
+    
     func loadSong(_ fileName: String) {
         let path = Bundle.main.path(forResource: "\(fileName).mp3", ofType: nil)!
         let url = URL(fileURLWithPath: path)
@@ -19,10 +24,12 @@ class AudioPlayer {
     }
     
     func play() {
+        controlButtonIcon = Image(systemName: "pause.fill")
         audioPlayer.play()
     }
     
     func pause() {
+        controlButtonIcon = Image(systemName: "play.fill")
         audioPlayer.pause()
     }
 }

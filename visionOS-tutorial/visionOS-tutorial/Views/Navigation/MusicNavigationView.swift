@@ -68,8 +68,10 @@ struct MusicNavigationView: View {
             switch model.currNavigationView {
             case .library:
                 PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0])
+                    .padding(.bottom, 80) // account for bottom bar
             case .concerts:
                 ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
+                    .padding(.bottom, 80) // account for bottom bar
             }
         }
     }
