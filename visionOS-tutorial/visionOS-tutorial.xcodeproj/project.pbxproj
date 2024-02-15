@@ -45,6 +45,7 @@
 		2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */; };
 		2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */; };
 		2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */; };
+		2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */; };
 		2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */; };
 		2C6E96D72B75F226001C0225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D62B75F226001C0225 /* MainView.swift */; };
 		2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D82B7965F9001C0225 /* ControlsBar.swift */; };
@@ -105,6 +106,7 @@
 		2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
 		2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
 		2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AverageColor.swift"; sourceTree = "<group>"; };
 		2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		2C6E96D62B75F226001C0225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2C6E96D82B7965F9001C0225 /* ControlsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsBar.swift; sourceTree = "<group>"; };
@@ -157,11 +159,11 @@
 		2C3B69A52A79C4B200E4A4F2 /* visionOS-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */,
+				2C53AB5F2B7DC37E00599EEB /* Resources */,
 				2C3B69C02A79C5B100E4A4F2 /* Views */,
 				2C3B69BF2A79C5AC00E4A4F2 /* Model */,
 				2C3B69BE2A79C5A700E4A4F2 /* Data */,
-				2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */,
-				2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */,
 				2C3B69B02A79C4B300E4A4F2 /* Preview Content */,
 			);
 			path = "visionOS-tutorial";
@@ -287,6 +289,15 @@
 				2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */,
 			);
 			path = FunkAndSoul;
+			sourceTree = "<group>";
+		};
+		2C53AB5F2B7DC37E00599EEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */,
+				2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2CFBC2502B54D76200B570E0 /* Videos */ = {
@@ -483,6 +494,7 @@
 				2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */,
 				2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */,
 				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
+				2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */,
 				2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,

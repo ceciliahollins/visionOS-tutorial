@@ -39,7 +39,7 @@ struct MyLibrary {
         let four = Song(songTitle: "Be About You", artist: "Winston Surfshirt", albumCover: "winstonSurfshirt", songLength: "4:09", audioFileName: "WinstonSurfshirt_BeAboutYou")
         let five = Song(songTitle: "Confidence", artist: "Ocean Alley", albumCover: "oceanAlley", songLength: "4:13", audioFileName: "OceanAlley_Confidence")
         
-        return Playlist(title: "Australian Surf Rock",
+        return Playlist(title: "Aussie Surf Rock",
                         description: "Driving down the coast blasting this playlist",
                         coverImage: "surfRockCover",
                         songs: [one, two, three, four, five])

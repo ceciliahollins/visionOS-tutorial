@@ -29,6 +29,7 @@ struct PlaylistView: View {
             }
         }
         .padding()
+        .background((averageColorFromImage(playlist.coverImage) ?? Color.black).glassBackgroundEffect())
         .toolbar(.hidden, for: .navigationBar)
     }
     
@@ -38,7 +39,7 @@ struct PlaylistView: View {
                 Image(playlist.coverImage)
                     .resizable()
                     .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                     .frame(width: proxy.size.width*0.3)
                 
                 VStack(alignment: .leading) {
@@ -101,7 +102,6 @@ struct PlaylistView: View {
 
 #Preview {
     PlaylistView(playlist: MyLibrary.createSeventiesPlaylist())
-    .glassBackgroundEffect()
     .environment(ViewModel())
     .environment(AudioPlayer())
 }
