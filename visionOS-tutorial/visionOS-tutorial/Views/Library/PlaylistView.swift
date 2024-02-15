@@ -11,7 +11,6 @@ import AVFoundation
 struct PlaylistView: View {
     
     var playlist: Playlist    
-    @State private var playlistRowIsFocused: Bool = false
     
     @Environment(ViewModel.self) private var model
     @Environment(AudioPlayer.self) private var audioPlayer
@@ -63,10 +62,6 @@ struct PlaylistView: View {
                         playNewSelectedSong(song)
                     }, label: {
                         HStack {
-                            Image(systemName: "play.fill")
-                                .foregroundStyle(playlistRowIsFocused ? .white : .clear)
-                                .padding(.trailing)
-                            
                             Image(song.albumCover)
                                 .resizable()
                                 .scaledToFit()
@@ -88,10 +83,6 @@ struct PlaylistView: View {
                     })
                     .buttonStyle(.borderless)
                     .buttonBorderShape(.roundedRectangle(radius: 20))
-                    .onHover(perform: { hovering in
-                        // TODO: this does not seem to get hit
-                        playlistRowIsFocused = hovering
-                    })
                 }
             }
         }

@@ -10,8 +10,6 @@ import Observation
 
 @Observable
 class ViewModel {    
-    var currNavigationView: MusicNavigation = .library
-    
     var myLibrary: MyLibrary = MyLibrary()
     var currSelectedPlaylist: Playlist = Playlist(title: "", description: "", coverImage: "", songs: [])
     var currPlayingSong: Song = Song(songTitle: "", artist: "", albumCover: "", songLength: "", audioFileName: "")

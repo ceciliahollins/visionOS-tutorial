@@ -11,7 +11,6 @@ import AVFoundation
 struct ConcertView: View {
     
     var concert: Concert
-    @State private var concertRowIsFocused: Bool = false
     
     @Environment(ViewModel.self) private var model
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
@@ -91,9 +90,6 @@ struct ConcertView: View {
                     .buttonStyle(.borderless)
                     .padding(.horizontal)
                     .hoverEffectDisabled()
-                    .onHover(perform: { hovering in
-                        concertRowIsFocused = hovering
-                    })
                 }
         }
         .padding()

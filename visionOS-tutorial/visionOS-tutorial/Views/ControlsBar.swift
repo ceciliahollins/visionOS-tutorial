@@ -14,22 +14,13 @@ struct ControlsBar: View {
     @Environment(\.openWindow) private var openWindow
     
     var body: some View {
-        GeometryReader { geo in
-            VStack {
-                Spacer()
-                
-                HStack {
-                    currPlayingSong
-                        .frame(width: geo.size.width/3)
-                    playPauseButton
-                        .frame(width: geo.size.width/3)
-                    expandViewButton
-                        .frame(width: geo.size.width/3)
-                }
-                .padding(.vertical)
-                .background(.accent)
+            HStack {
+                currPlayingSong
+                playPauseButton
+                expandViewButton
             }
-        }
+            .padding(.vertical, 6)
+            .padding(.horizontal, 48)
     }
     
     var currPlayingSong: some View {
@@ -51,7 +42,6 @@ struct ControlsBar: View {
             }
             Spacer()
         }
-        .padding(.leading, 48)
     }
     
     var playPauseButton: some View {
@@ -81,7 +71,6 @@ struct ControlsBar: View {
                     .font(.largeTitle)
             })
         }
-        .padding(.trailing, 48)
     }
 }
 
