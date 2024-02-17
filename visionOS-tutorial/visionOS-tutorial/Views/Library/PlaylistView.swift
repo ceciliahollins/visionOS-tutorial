@@ -11,7 +11,6 @@ import AVFoundation
 struct PlaylistView: View {
     
     var playlist: Playlist    
-    @State private var playlistRowIsFocused: Bool = false
     
     @Environment(ViewModel.self) private var model
     @Environment(AudioPlayer.self) private var audioPlayer
@@ -30,6 +29,7 @@ struct PlaylistView: View {
             }
         }
         .padding()
+        .background((averageColorFromImage(playlist.coverImage) ?? Color.black).glassBackgroundEffect())
         .toolbar(.hidden, for: .navigationBar)
     }
     
@@ -39,7 +39,7 @@ struct PlaylistView: View {
                 Image(playlist.coverImage)
                     .resizable()
                     .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
+                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                     .frame(width: proxy.size.width*0.3)
                 
                 VStack(alignment: .leading) {
@@ -63,10 +63,6 @@ struct PlaylistView: View {
                         playNewSelectedSong(song)
                     }, label: {
                         HStack {
-                            Image(systemName: "play.fill")
-                                .foregroundStyle(playlistRowIsFocused ? .white : .clear)
-                                .padding(.trailing)
-                            
                             Image(song.albumCover)
                                 .resizable()
                                 .scaledToFit()
@@ -88,10 +84,6 @@ struct PlaylistView: View {
                     })
                     .buttonStyle(.borderless)
                     .buttonBorderShape(.roundedRectangle(radius: 20))
-                    .onHover(perform: { hovering in
-                        // TODO: this does not seem to get hit
-                        playlistRowIsFocused = hovering
-                    })
                 }
             }
         }
@@ -110,7 +102,6 @@ struct PlaylistView: View {
 
 #Preview {
     PlaylistView(playlist: MyLibrary.createSeventiesPlaylist())
-    .glassBackgroundEffect()
     .environment(ViewModel())
     .environment(AudioPlayer())
 }

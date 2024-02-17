@@ -14,16 +14,17 @@ struct MainView: View {
     @Environment(\.openWindow) private var openWindow
     
     var body: some View {
-        ZStack {
+        GeometryReader { geo in
             MusicNavigationView()
-                .environment(model)
-                .environment(audioPlayer)
-            
-            ControlsBar()
-                .environment(model)
-                .environment(audioPlayer)
-                .cornerRadius(50) // TODO: this shouldn't be manually set, figure out how not to extend beyond the window
+                .toolbar {
+                    ToolbarItem(placement: .bottomOrnament) {
+                        ControlsBar()
+                            .frame(width: geo.size.width*0.8)
+                    }
+                }
         }
+        .environment(model)
+        .environment(audioPlayer)
     }
 }
 

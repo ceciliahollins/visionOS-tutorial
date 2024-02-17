@@ -16,63 +16,66 @@ struct MusicNavigationView: View {
     
     @State private var selectedPlaylist: Playlist?
     @State private var selectedConcert: Concert?
-        
+    
     var body: some View {
         @Bindable var model = model
         
-        NavigationSplitView {
-            VStack {
-                Button {
-                    model.currNavigationView = .library
-                } label: {
-                    Text("Library")
-                        .frame(maxWidth: .infinity)
+        TabView {
+            playlists
+                .tabItem {
+                    Label(
+                        title: { Text("Playlist") },
+                        icon: { Image(systemName: "music.note") }
+                    )
                 }
-                .padding(.horizontal)
-                
-                Button {
-                    model.currNavigationView = .concerts
-                } label: {
-                    Text("Concerts")
-                        .frame(maxWidth: .infinity)
+            
+            concerts
+                .tabItem {
+                    Label(
+                        title: { Text("Concert") },
+                        icon: { Image(systemName: "music.mic") }
+                    )
                 }
-                .padding(.horizontal)
-                .padding(.bottom)
-                
-                switch model.currNavigationView {
-                case .library:
-                    // TODO: visionOS is having binding issues with using the model directly, figure out why
-                    List(selection: $selectedPlaylist) {
-                        ForEach(model.myLibrary.library, id: \.id) { playlist in
-                            NavigationLink(value: playlist) {
-                                TabbarItem(title: playlist.title,
-                                           image: Image(playlist.coverImage))
-                            }
-                        }
-                    }
-                case .concerts:
-                    // TODO: visionOS is having binding issues with using the model directly, figure out why
-                    List(selection: $selectedConcert) {
-                        ForEach(model.myConcerts.concerts, id: \.id) { concert in
-                            NavigationLink(value: concert) {
-                                TabbarItem(title: concert.artist,
-                                           image: Image(concert.imageThumbnail))
-                            }
-                        }
+        }
+        .environment(model)
+        .environment(audioPlayer)
+    }
+    
+    var playlists: some View {
+        @Bindable var model = model
+        
+        return NavigationSplitView {
+            List(selection: $selectedPlaylist) {
+                ForEach(model.myLibrary.library, id: \.id) { playlist in
+                    NavigationLink(value: playlist) {
+                        TabbarItem(title: playlist.title,
+                                   image: Image(playlist.coverImage))
                     }
                 }
             }
+            .padding(.vertical, 42)
             .toolbar(.hidden)
-            .padding()
         } detail: {
-            switch model.currNavigationView {
-            case .library:
-                PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0])
-                    .padding(.bottom, 80) // account for bottom bar
-            case .concerts:
-                ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
-                    .padding(.bottom, 80) // account for bottom bar
+            PlaylistView(playlist: selectedPlaylist ?? model.myLibrary.library[0])
+        }
+    }
+    
+    var concerts: some View {
+        @Bindable var model = model
+        
+        return NavigationSplitView {
+            List(selection: $selectedConcert) {
+                ForEach(model.myConcerts.concerts, id: \.id) { concert in
+                    NavigationLink(value: concert) {
+                        TabbarItem(title: concert.artist,
+                                   image: Image(concert.imageThumbnail))
+                    }
+                }
             }
+            .padding(.vertical, 42)
+            .toolbar(.hidden)
+        } detail: {
+            ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
         }
     }
 }
