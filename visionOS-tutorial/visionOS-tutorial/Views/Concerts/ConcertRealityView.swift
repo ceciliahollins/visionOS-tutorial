@@ -1,5 +1,5 @@
 //
-//  VideoPlayer.swift
+//  ConcertRealityView.swift
 //  visionOS-tutorial
 //
 //  Created by Hollins, Cecilia on 17/1/2024.
@@ -10,7 +10,7 @@ import UIKit
 import RealityKit
 import AVKit
 
-struct VideoPlayer: View {
+struct ConcertRealityView: View {
     
     @Environment(ViewModel.self) private var model
     
