@@ -17,11 +17,13 @@ struct ProductionRealityView: View {
     @Environment(ViewModel.self) private var model
     @Environment(ProductionPlayer.self) private var productionPlayer
     
+    // create entities for the 4 instruments
     @State private var microphone = ModelEntity()
     @State private var drums = ModelEntity()
     @State private var bass = ModelEntity()
     @State private var others = ModelEntity()
     
+    // create variables to track the volume for each instrument
     @State private var vocalsVolume: Float = 1.0
     @State private var drumsVolume: Float = 1.0
     @State private var bassVolume: Float = 1.0
@@ -32,14 +34,25 @@ struct ProductionRealityView: View {
         @Bindable var productionPlayer = productionPlayer
         
         RealityView { content, _  in
+            // load the instruments 3D asset
             microphone = try! await ModelEntity(named: "Microphone")
+            // scale the model based on the size of the asset
             microphone.scale = SIMD3(repeating: 0.001)
+            // position the model in the users environent
             microphone.position = [-1.5, 1, -2]
+            // create a collision box
+            // this allows for gestures to be received on the model
             microphone.components.set(InputTargetComponent())
+            // currently, a box is generated around the model for the collision
+            // it is not a perfectly tight box around the object, but it is close enough
             microphone.collision = CollisionComponent(shapes: [ShapeResource.generateBox(width: 150, height: 600, depth: 100)])
+            // use extensions provided by Apple to set light on the model
             microphone.setSunlight(intensity: 10)
+            // add the model to the content
             content.add(microphone)
 
+            // repeat the above steps for each instrument
+            
             drums = try! await ModelEntity(named: "Drums")
             drums.scale = SIMD3(repeating: 0.005)
             drums.position = [-0.5, 1, -2]
@@ -65,10 +78,15 @@ struct ProductionRealityView: View {
             others.setSunlight(intensity: 10)
             content.add(others)
         } update: { content, attachments in
+            // find the attachment that is created in the attachments closure, using the id to find it
             if let microphoneControls = attachments.entity(for: "microphoneControls") {
+                // position the attachment above the respective model
                 microphoneControls.position = microphone.position + [0, 500, 0]
+                // add the attachment as a child of the model
                 microphone.addChild(microphoneControls, preservingWorldTransform: true)
             }
+            
+            // repeat the above steps for each instrument
             
             if let drumsControls = attachments.entity(for: "drumsControls") {
                 drumsControls.position = drums.position + [0, 175, 0]
@@ -85,7 +103,9 @@ struct ProductionRealityView: View {
                 others.addChild(othersControls, preservingWorldTransform: true)
             }
         } attachments: {
+            // create an attachment, assigning it an id value
             Attachment(id: "microphoneControls") {
+                // add the desired SwiftUI view
                 VStack(spacing: 50) {
                     Slider(value: $vocalsVolume, in: 0.0...1.0)
                         .tint(.accent)
@@ -96,6 +116,8 @@ struct ProductionRealityView: View {
                 .frame(width: 800)
                 .glassBackgroundEffect()
             }
+            
+            // repeat the above steps for each instrument
             
             Attachment(id: "drumsControls") {
                 VStack(spacing: 50) {
@@ -136,6 +158,8 @@ struct ProductionRealityView: View {
         .onAppear {
             productionPlayer.loadSongs(model.currSelectedProduction.filesName)
         }
+        // create spatial tap gestures, adding the target to the model entity
+        // the tap is registered when tapped within the model's collision box
         .gesture(SpatialTapGesture()
             .targetedToEntity(microphone)
             .onEnded { _ in
@@ -156,6 +180,7 @@ struct ProductionRealityView: View {
             .onEnded { _ in
                 othersVolume = othersVolume == 0.0 ? 1.0 : 0.0
             })
+        // adjust the production player audio based on the state variables
         .onChange(of: vocalsVolume) { _, newValue in
             productionPlayer.vocalsAudio.volume = newValue
         }

@@ -44,6 +44,8 @@
 		2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */; };
 		2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */; };
 		2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */; };
+		2C4885CA2B8FF38600E773AB /* Entity+Sunlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */; };
+		2C4885CC2B8FF41F00E773AB /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */; };
 		2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */; };
 		2C6A16E02B5742F600910E64 /* ConcertRealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* ConcertRealityView.swift */; };
 		2C6E96D72B75F226001C0225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D62B75F226001C0225 /* MainView.swift */; };
@@ -126,6 +128,8 @@
 		2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
 		2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
 		2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Sunlight.swift"; sourceTree = "<group>"; };
+		2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
 		2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AverageColor.swift"; sourceTree = "<group>"; };
 		2C6A16DF2B5742F600910E64 /* ConcertRealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertRealityView.swift; sourceTree = "<group>"; };
 		2C6E96D62B75F226001C0225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -334,8 +338,10 @@
 		2C53AB5F2B7DC37E00599EEB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */,
 				2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */,
 				2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */,
+				2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 				2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */,
 				2C4101D92B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 in Resources */,
 				2C4101BB2B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 in Resources */,
+				2C4885CC2B8FF41F00E773AB /* Sunlight.skybox in Resources */,
 				2CCDA11D2B8E833000055161 /* others_MacMiller_BlueWorld.mp3 in Resources */,
 				2CFFFE4D2B6C8761008FF0D5 /* GlassAnimals_Gooey.MOV in Resources */,
 				2C3B69B22A79C4B300E4A4F2 /* Preview Assets.xcassets in Resources */,
@@ -616,6 +623,7 @@
 				2C6A16E02B5742F600910E64 /* ConcertRealityView.swift in Sources */,
 				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
 				2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */,
+				2C4885CA2B8FF38600E773AB /* Entity+Sunlight.swift in Sources */,
 				2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,
