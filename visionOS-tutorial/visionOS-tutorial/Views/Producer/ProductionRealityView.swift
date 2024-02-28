@@ -37,6 +37,7 @@ struct ProductionRealityView: View {
             microphone.position = [-1.5, 1, -2]
             microphone.components.set(InputTargetComponent())
             microphone.collision = CollisionComponent(shapes: [ShapeResource.generateBox(width: 150, height: 600, depth: 100)])
+            microphone.setSunlight(intensity: 10)
             content.add(microphone)
 
             drums = try! await ModelEntity(named: "Drums")
@@ -44,6 +45,8 @@ struct ProductionRealityView: View {
             drums.position = [-0.5, 1, -2]
             drums.components.set(InputTargetComponent())
             drums.collision = CollisionComponent(shapes: [ShapeResource.generateBox(width: 175, height: 250, depth: 150)])
+            drums.components.set(ImageBasedLightReceiverComponent(imageBasedLight: drums))
+            drums.setSunlight(intensity: 10)
             content.add(drums)
             
             bass = try! await ModelEntity(named: "Bass")
@@ -51,6 +54,7 @@ struct ProductionRealityView: View {
             bass.position = [0.5, 1, -2]
             bass.components.set(InputTargetComponent())
             bass.collision = CollisionComponent(shapes: [ShapeResource.generateBox(width: 200, height: 100, depth: 100)])
+            bass.setSunlight(intensity: 10)
             content.add(bass)
             
             others = try! await ModelEntity(named: "Other")
@@ -58,6 +62,7 @@ struct ProductionRealityView: View {
             others.position = [1.5, 1, -2]
             others.components.set(InputTargetComponent())
             others.collision = CollisionComponent(shapes: [ShapeResource.generateBox(width: 150, height: 200, depth: 150)])
+            others.setSunlight(intensity: 10)
             content.add(others)
         } update: { content, attachments in
             if let microphoneControls = attachments.entity(for: "microphoneControls") {
