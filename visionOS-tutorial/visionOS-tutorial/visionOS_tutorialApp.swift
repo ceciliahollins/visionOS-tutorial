@@ -13,6 +13,7 @@ struct VisionProFirstProjectApp: App {
     
     @State private var model = ViewModel()
     @State private var audioPlayer: AudioPlayer = AudioPlayer()
+    @State private var productionPlayer: ProductionPlayer = ProductionPlayer()
     
     init() {
         // give an initial song to play on first load
@@ -22,6 +23,9 @@ struct VisionProFirstProjectApp: App {
     }
     
     var body: some Scene {
+        
+        // MARK: Playlists
+        
         WindowGroup(id: "library") {
             MainView()
                 .environment(model)
@@ -35,16 +39,33 @@ struct VisionProFirstProjectApp: App {
         }
         .windowStyle(.plain)
         
+        // MARK: Concerts
+        
+        ImmersiveSpace(id: "concertVideo") {
+            ConcertRealityView()
+                .environment(model)
+        }
+        .immersionStyle(selection: .constant(.full), in: .full)
+        
         WindowGroup(id: "concertControls") {
             ConcertControlsView()
         }
         .windowStyle(.plain)
         .defaultSize(width: 100, height: 50)
         
-        ImmersiveSpace(id: "concertVideo") {
-            VideoPlayer()
+        // MARK: Productions
+        
+        ImmersiveSpace(id: "production") {
+            ProductionRealityView()
                 .environment(model)
+                .environment(productionPlayer)
         }
-        .immersionStyle(selection: .constant(.full), in: .full)
+        
+        WindowGroup(id: "productionControls") {
+            ProductionControlsView()
+                .environment(productionPlayer)
+        }
+        .windowStyle(.plain)
+        .defaultSize(width: 450, height: 350)
     }
 }

@@ -15,9 +15,18 @@ The windows demo displays playlists and lists of songs, with a new window presen
 
 ![ImmersiveVideoDemo](https://github.com/ceciliahollins/visionOS-tutorial/blob/main/visionOSImmersiveVideoDemo.gif)
 
-The immersive video example puts the user in a concert environment and plays a video from a gig to replicate the experience of the concert. The main highlights of this feature is:
+The immersive video demo puts the user in a concert environment and plays a video from a gig to replicate the experience of the concert. The main highlights of this feature is:
 * Dismissing windows and presenting an immersive space, as well as exiting an immersive space and presenting windows again
 * Using RealityKit and AVKit to play a video in an immersive space
+* Curving a video by creating a MeshResource programatically
+
+![AugmentedDemo](https://github.com/ceciliahollins/visionOS-tutorial/blob/main/visionOSAugmentedMusicDemo.gif)
+
+The augmented music demo makes the user a music producer, and allows them to interact with 3D instruments to create music. The 3D models are added to the users environment in a mixed reality view, where Gestures and attachments are added to the ModelEntity for interactions. the main highlights of this feature is:
+* Dismissing windows and presenting an immersive space, as well as exiting an immersive space and presenting windows again
+* Using RealityKit and ARKit to add 3D models to a users environment in a mixed reality view
+* Adding interactions to the 3D models using swifts Gesture and attachments
+This feature should be improved once a physical device is obtained, as many of the interesting frameworks from ARKit require a physical device for development.
 
 ## Getting Started
 
