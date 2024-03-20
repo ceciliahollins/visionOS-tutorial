@@ -13,9 +13,9 @@ struct MyConcerts {
     var concerts: [Concert] = []
     
     init() {
+        concerts.append(MyConcerts.createAndersonPaakConcert())
         concerts.append(MyConcerts.createGlassAnimalsConcert())
         concerts.append(MyConcerts.createEasyLifeConcert())
-        concerts.append(MyConcerts.createAndersonPaakConcert())
         concerts.append(MyConcerts.createTheInternetConcert())
     }
     
