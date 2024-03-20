@@ -17,7 +17,6 @@ struct MyConcerts {
         concerts.append(MyConcerts.createEasyLifeConcert())
         concerts.append(MyConcerts.createAndersonPaakConcert())
         concerts.append(MyConcerts.createTheInternetConcert())
-        concerts.append(MyConcerts.createOceanAlleyConcert())
     }
     
     static func createGlassAnimalsConcert() -> Concert {
@@ -62,16 +61,5 @@ struct MyConcerts {
                        songs: [one, two, three],
                        imageThumbnail: "theInternet",
                        imageHeader: "theInternetHeader")
-    }
-    
-    static func createOceanAlleyConcert() -> Concert {
-        let one = ConcertSong(songName: "Confidence", videoName: "OceanAlley_Confidence", concertImage: "oceanAlleyConcert1")
-        let two = ConcertSong(songName: "Baby Come Back", videoName: "OceanAlley_BabyComeBack", concertImage: "oceanAlleyConcert2")
-        let three = ConcertSong(songName: "Knees", videoName: "OceanAlley_Knees", concertImage: "oceanAlleyConcert3")
-        
-        return Concert(artist: "Ocean Alley",
-                       songs: [one, two, three],
-                       imageThumbnail: "oceanAlley",
-                       imageHeader: "oceanAlleyHeader")
     }
 }

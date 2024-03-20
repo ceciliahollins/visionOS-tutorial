@@ -87,9 +87,6 @@
 		2CFFFE532B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE502B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV */; };
 		2CFFFE542B6C8790008FF0D5 /* EasyLife_Sangria.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */; };
 		2CFFFE552B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE522B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV */; };
-		2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5C2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV */; };
-		2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5D2B6C87A9008FF0D5 /* OceanAlley_Knees.MOV */; };
-		2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5E2B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,9 +172,6 @@
 		2CFFFE502B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_PettyCrimes.MOV; sourceTree = "<group>"; };
 		2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_Sangria.MOV; sourceTree = "<group>"; };
 		2CFFFE522B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_PeanutButter.MOV; sourceTree = "<group>"; };
-		2CFFFE5C2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_Confidence.MOV; sourceTree = "<group>"; };
-		2CFFFE5D2B6C87A9008FF0D5 /* OceanAlley_Knees.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_Knees.MOV; sourceTree = "<group>"; };
-		2CFFFE5E2B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_BabyComeBack.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,7 +437,6 @@
 				2C40AD092BAA527300FC5A2A /* AndersonPaak */,
 				2CFFFE462B6C86FB008FF0D5 /* GlassAnimals */,
 				2CFFFE472B6C870A008FF0D5 /* EasyLife */,
-				2CFFFE492B6C8728008FF0D5 /* OceanAlley */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -494,16 +487,6 @@
 				2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */,
 			);
 			path = EasyLife;
-			sourceTree = "<group>";
-		};
-		2CFFFE492B6C8728008FF0D5 /* OceanAlley */ = {
-			isa = PBXGroup;
-			children = (
-				2CFFFE5E2B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV */,
-				2CFFFE5C2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV */,
-				2CFFFE5D2B6C87A9008FF0D5 /* OceanAlley_Knees.MOV */,
-			);
-			path = OceanAlley;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,7 +551,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */,
 				2C4101D92B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 in Resources */,
 				2C4101BB2B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 in Resources */,
 				2C4885CC2B8FF41F00E773AB /* Sunlight.skybox in Resources */,
@@ -584,7 +566,6 @@
 				2C40AD102BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV in Resources */,
 				2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
 				2CFFFE542B6C8790008FF0D5 /* EasyLife_Sangria.MOV in Resources */,
-				2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */,
 				2C4101BD2B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 in Resources */,
 				2C4101C92B75AFF700CC3665 /* TheStrokes_LastNite.mp3 in Resources */,
 				2CCDA0EF2B8AD98100055161 /* others_Jungle_BackOn74.mp3 in Resources */,
@@ -598,7 +579,6 @@
 				2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */,
 				2C4101B02B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
 				2CCDA0EC2B8AD98100055161 /* bass_Jungle_BackOn74.mp3 in Resources */,
-				2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */,
 				2CCDA1062B8D52C600055161 /* Microphone.usdz in Resources */,
 				2CFFFE4F2B6C8761008FF0D5 /* GlassAnimals_HeatWaves.MOV in Resources */,
 				2CCDA1152B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 in Resources */,
