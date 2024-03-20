@@ -63,7 +63,7 @@ struct ConcertRealityView: View {
         // configurable variables
         
         // higher number = more intense curve
-        let curveIntensity = 0.25
+        let curveIntensity = 0.4
         // pick the width, the height is calculated by aspect ratio
         let videoWidth = 3.0
         

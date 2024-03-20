@@ -12,6 +12,9 @@ import RealityKit
 // TODO: Improve functionality with placement of content on specific points in the room
 // Need a physical device to do this
 // https://developer.apple.com/documentation/visionos/placing-content-on-detected-planes
+
+// TODO: Insert spatial audio
+
 struct ProductionRealityView: View {
     
     @Environment(ViewModel.self) private var model
