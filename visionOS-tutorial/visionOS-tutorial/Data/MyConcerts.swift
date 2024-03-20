@@ -15,7 +15,8 @@ struct MyConcerts {
     init() {
         concerts.append(MyConcerts.createGlassAnimalsConcert())
         concerts.append(MyConcerts.createEasyLifeConcert())
-        concerts.append(MyConcerts.createEltonJohnConcert())
+        concerts.append(MyConcerts.createAndersonPaakConcert())
+        concerts.append(MyConcerts.createTheInternetConcert())
         concerts.append(MyConcerts.createOceanAlleyConcert())
     }
     
@@ -41,15 +42,26 @@ struct MyConcerts {
                        imageHeader: "easyLifeHeader")
     }
     
-    static func createEltonJohnConcert() -> Concert {
-        let one = ConcertSong(songName: "Bennie and the Jets", videoName: "EltonJohn_BennieAndTheJets", concertImage: "eltonJohnConcert1")
-        let two = ConcertSong(songName: "Rocket Man", videoName: "EltonJohn_RocketMan", concertImage: "eltonJohnConcert2")
-        let three = ConcertSong(songName: "Crocodile Rock", videoName: "EltonJohn_CrocodileRock", concertImage: "eltonJohnConcert3")
+    static func createAndersonPaakConcert() -> Concert {
+        let one = ConcertSong(songName: "Am I Wrong", videoName: "AndersonPaak_AmIWrong", concertImage: "andersonPaakConcert1")
+        let two = ConcertSong(songName: "The Bird", videoName: "AndersonPaak_TheBird", concertImage: "andersonPaakConcert2")
+        let three = ConcertSong(songName: "Come Down", videoName: "AndersonPaak_ComeDown", concertImage: "andersonPaakConcert3")
         
-        return Concert(artist: "Elton John",
+        return Concert(artist: "Anderson Paak",
                        songs: [one, two, three],
-                       imageThumbnail: "eltonJohn",
-                       imageHeader: "eltonJohnHeader")
+                       imageThumbnail: "andersonPaak",
+                       imageHeader: "andersonPaakHeader")
+    }
+    
+    static func createTheInternetConcert() -> Concert {
+        let one = ConcertSong(songName: "Dark Red (1)", videoName: "SteveLacy_DarkRed", concertImage: "theInternetConcert1")
+        let two = ConcertSong(songName: "Dark Red (2)", videoName: "SteveLacy_DarkRed_2", concertImage: "theInternetConcert2")
+        let three = ConcertSong(songName: "Girl", videoName: "TheInternet_Girl", concertImage: "theInternetConcert3")
+        
+        return Concert(artist: "The Internet",
+                       songs: [one, two, three],
+                       imageThumbnail: "theInternet",
+                       imageHeader: "theInternetHeader")
     }
     
     static func createOceanAlleyConcert() -> Concert {

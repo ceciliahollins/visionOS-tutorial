@@ -19,6 +19,12 @@
 		2C3B69CA2A79C5F400E4A4F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */; };
 		2C3B69CE2A79C60000E4A4F2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */; };
 		2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */; };
+		2C40AD0E2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD0B2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV */; };
+		2C40AD0F2BAA558000FC5A2A /* AndersonPaak_AmIWrong.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD0C2BAA558000FC5A2A /* AndersonPaak_AmIWrong.MOV */; };
+		2C40AD102BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD0D2BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV */; };
+		2C40AD142BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD112BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV */; };
+		2C40AD152BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD122BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV */; };
+		2C40AD162BAA5E8100FC5A2A /* TheInternet_Girl.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2C40AD132BAA5E8100FC5A2A /* TheInternet_Girl.MOV */; };
 		2C4101AD2B75A52B00CC3665 /* BillyJoel_Vienna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101A82B75A52B00CC3665 /* BillyJoel_Vienna.mp3 */; };
 		2C4101AE2B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101A92B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 */; };
 		2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101AA2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 */; };
@@ -58,9 +64,6 @@
 		2CFFFE532B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE502B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV */; };
 		2CFFFE542B6C8790008FF0D5 /* EasyLife_Sangria.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */; };
 		2CFFFE552B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE522B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV */; };
-		2CFFFE592B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE562B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV */; };
-		2CFFFE5A2B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE572B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV */; };
-		2CFFFE5B2B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE582B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV */; };
 		2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5C2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV */; };
 		2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5D2B6C87A9008FF0D5 /* OceanAlley_Knees.MOV */; };
 		2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2CFFFE5E2B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV */; };
@@ -80,6 +83,12 @@
 		2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
+		2C40AD0B2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = AndersonPaak_TheBird.MOV; sourceTree = "<group>"; };
+		2C40AD0C2BAA558000FC5A2A /* AndersonPaak_AmIWrong.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = AndersonPaak_AmIWrong.MOV; sourceTree = "<group>"; };
+		2C40AD0D2BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = AndersonPaak_ComeDown.MOV; sourceTree = "<group>"; };
+		2C40AD112BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SteveLacy_DarkRed_2.MOV; sourceTree = "<group>"; };
+		2C40AD122BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SteveLacy_DarkRed.MOV; sourceTree = "<group>"; };
+		2C40AD132BAA5E8100FC5A2A /* TheInternet_Girl.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TheInternet_Girl.MOV; sourceTree = "<group>"; };
 		2C4101A82B75A52B00CC3665 /* BillyJoel_Vienna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BillyJoel_Vienna.mp3; sourceTree = "<group>"; };
 		2C4101A92B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Eagles_OneOfTheseNights.mp3; sourceTree = "<group>"; };
 		2C4101AA2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EltonJohn_BennieAndTheJets.mp3; sourceTree = "<group>"; };
@@ -119,9 +128,6 @@
 		2CFFFE502B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_PettyCrimes.MOV; sourceTree = "<group>"; };
 		2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_Sangria.MOV; sourceTree = "<group>"; };
 		2CFFFE522B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EasyLife_PeanutButter.MOV; sourceTree = "<group>"; };
-		2CFFFE562B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EltonJohn_CrocodileRock.MOV; sourceTree = "<group>"; };
-		2CFFFE572B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EltonJohn_RocketMan.MOV; sourceTree = "<group>"; };
-		2CFFFE582B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = EltonJohn_BennieAndTheJets.MOV; sourceTree = "<group>"; };
 		2CFFFE5C2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_Confidence.MOV; sourceTree = "<group>"; };
 		2CFFFE5D2B6C87A9008FF0D5 /* OceanAlley_Knees.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_Knees.MOV; sourceTree = "<group>"; };
 		2CFFFE5E2B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OceanAlley_BabyComeBack.MOV; sourceTree = "<group>"; };
@@ -219,6 +225,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2C40AD092BAA527300FC5A2A /* AndersonPaak */ = {
+			isa = PBXGroup;
+			children = (
+				2C40AD0C2BAA558000FC5A2A /* AndersonPaak_AmIWrong.MOV */,
+				2C40AD0D2BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV */,
+				2C40AD0B2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV */,
+			);
+			path = AndersonPaak;
+			sourceTree = "<group>";
+		};
+		2C40AD0A2BAA531600FC5A2A /* TheInternet */ = {
+			isa = PBXGroup;
+			children = (
+				2C40AD112BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV */,
+				2C40AD122BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV */,
+				2C40AD132BAA5E8100FC5A2A /* TheInternet_Girl.MOV */,
+			);
+			path = TheInternet;
+			sourceTree = "<group>";
+		};
 		2C4101A42B75A37100CC3665 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,9 +329,10 @@
 		2CFBC2502B54D76200B570E0 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				2C40AD0A2BAA531600FC5A2A /* TheInternet */,
+				2C40AD092BAA527300FC5A2A /* AndersonPaak */,
 				2CFFFE462B6C86FB008FF0D5 /* GlassAnimals */,
 				2CFFFE472B6C870A008FF0D5 /* EasyLife */,
-				2CFFFE482B6C871B008FF0D5 /* EltonJohn */,
 				2CFFFE492B6C8728008FF0D5 /* OceanAlley */,
 			);
 			path = Videos;
@@ -357,16 +384,6 @@
 				2CFFFE512B6C8790008FF0D5 /* EasyLife_Sangria.MOV */,
 			);
 			path = EasyLife;
-			sourceTree = "<group>";
-		};
-		2CFFFE482B6C871B008FF0D5 /* EltonJohn */ = {
-			isa = PBXGroup;
-			children = (
-				2CFFFE582B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV */,
-				2CFFFE562B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV */,
-				2CFFFE572B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV */,
-			);
-			path = EltonJohn;
 			sourceTree = "<group>";
 		};
 		2CFFFE492B6C8728008FF0D5 /* OceanAlley */ = {
@@ -448,6 +465,7 @@
 				2C4101C62B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 in Resources */,
 				2C4101AD2B75A52B00CC3665 /* BillyJoel_Vienna.mp3 in Resources */,
 				2C4101C82B75AFF700CC3665 /* TheKooks_Naive.mp3 in Resources */,
+				2C40AD102BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV in Resources */,
 				2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
 				2CFFFE542B6C8790008FF0D5 /* EasyLife_Sangria.MOV in Resources */,
 				2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */,
@@ -457,25 +475,29 @@
 				2C4101C72B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 in Resources */,
 				2C4101C52B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 in Resources */,
 				2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */,
-				2CFFFE592B6C879C008FF0D5 /* EltonJohn_CrocodileRock.MOV in Resources */,
 				2C4101B02B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
 				2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */,
 				2CFFFE4F2B6C8761008FF0D5 /* GlassAnimals_HeatWaves.MOV in Resources */,
 				2C4101BE2B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 in Resources */,
 				2C4101BF2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 in Resources */,
 				2C4101BC2B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 in Resources */,
-				2CFFFE5A2B6C879C008FF0D5 /* EltonJohn_RocketMan.MOV in Resources */,
+				2C40AD0F2BAA558000FC5A2A /* AndersonPaak_AmIWrong.MOV in Resources */,
+				2C40AD162BAA5E8100FC5A2A /* TheInternet_Girl.MOV in Resources */,
+				2C40AD0E2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV in Resources */,
+				2CCDA11B2B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 in Resources */,
 				2C4101D02B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 in Resources */,
 				2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */,
 				2C4101CF2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 in Resources */,
 				2C4101DB2B75B00D00CC3665 /* Jungle_BackOn74.mp3 in Resources */,
+				2C40AD142BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV in Resources */,
 				2CFFFE552B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV in Resources */,
 				2C4101B12B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 in Resources */,
-				2CFFFE5B2B6C879C008FF0D5 /* EltonJohn_BennieAndTheJets.MOV in Resources */,
+				2CCDA11E2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 in Resources */,
 				2CFFFE532B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV in Resources */,
 				2CFFFE4E2B6C8761008FF0D5 /* GlassAnimals_TheOtherSideOfParadise.MOV in Resources */,
 				2C4101DA2B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 in Resources */,
+				2C40AD152BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV in Resources */,
 				2C4101D32B75B00300CC3665 /* Maroon5_SundayMorning.mp3 in Resources */,
 				2C4101D22B75B00300CC3665 /* JohnMayer_Gravity.mp3 in Resources */,
 				2C4101D12B75B00300CC3665 /* JasonMraz_ImYours.mp3 in Resources */,
