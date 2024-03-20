@@ -16,6 +16,7 @@ struct MusicNavigationView: View {
     
     @State private var selectedPlaylist: Playlist?
     @State private var selectedConcert: Concert?
+    @State private var selectedProduction: Production?
     
     var body: some View {
         @Bindable var model = model
@@ -24,7 +25,7 @@ struct MusicNavigationView: View {
             playlists
                 .tabItem {
                     Label(
-                        title: { Text("Playlist") },
+                        title: { Text("Listen to Playlists") },
                         icon: { Image(systemName: "music.note") }
                     )
                 }
@@ -32,8 +33,16 @@ struct MusicNavigationView: View {
             concerts
                 .tabItem {
                     Label(
-                        title: { Text("Concert") },
+                        title: { Text("Attend a Concert") },
                         icon: { Image(systemName: "music.mic") }
+                    )
+                }
+            
+            productions
+                .tabItem {
+                    Label(
+                        title: { Text("Be a Producer") },
+                        icon: { Image(systemName: "headphones") }
                     )
                 }
         }
@@ -77,6 +86,13 @@ struct MusicNavigationView: View {
         } detail: {
             ConcertView(concert: selectedConcert ?? model.myConcerts.concerts[0])
         }
+    }
+    
+    var productions: some View {
+        @Bindable var model = model
+        
+        return ProductionView()
+
     }
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */; };
-		2C3B69A92A79C4B200E4A4F2 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3B69A82A79C4B200E4A4F2 /* RealityKitContent */; };
 		2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */; };
 		2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */; };
 		2C3B69B22A79C4B300E4A4F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B69B12A79C4B300E4A4F2 /* Preview Assets.xcassets */; };
@@ -51,10 +50,34 @@
 		2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */; };
 		2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */; };
 		2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */; };
+		2C4885CA2B8FF38600E773AB /* Entity+Sunlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */; };
+		2C4885CC2B8FF41F00E773AB /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */; };
 		2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */; };
-		2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */; };
+		2C6A16E02B5742F600910E64 /* ConcertRealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A16DF2B5742F600910E64 /* ConcertRealityView.swift */; };
 		2C6E96D72B75F226001C0225 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D62B75F226001C0225 /* MainView.swift */; };
 		2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E96D82B7965F9001C0225 /* ControlsBar.swift */; };
+		2CCDA0E32B8AD68700055161 /* Production.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA0E22B8AD68700055161 /* Production.swift */; };
+		2CCDA0E52B8AD80F00055161 /* MyProductions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA0E42B8AD80F00055161 /* MyProductions.swift */; };
+		2CCDA0EC2B8AD98100055161 /* bass_Jungle_BackOn74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA0E82B8AD98100055161 /* bass_Jungle_BackOn74.mp3 */; };
+		2CCDA0ED2B8AD98100055161 /* vocals_Jungle_BackOn74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA0E92B8AD98100055161 /* vocals_Jungle_BackOn74.mp3 */; };
+		2CCDA0EE2B8AD98100055161 /* drums_Jungle_BackOn74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA0EA2B8AD98100055161 /* drums_Jungle_BackOn74.mp3 */; };
+		2CCDA0EF2B8AD98100055161 /* others_Jungle_BackOn74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA0EB2B8AD98100055161 /* others_Jungle_BackOn74.mp3 */; };
+		2CCDA0F12B8AD9A100055161 /* ProductionRealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA0F02B8AD9A100055161 /* ProductionRealityView.swift */; };
+		2CCDA0F32B8ADCDC00055161 /* ProductionControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA0F22B8ADCDC00055161 /* ProductionControlsView.swift */; };
+		2CCDA0F52B8D357A00055161 /* ProductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA0F42B8D357A00055161 /* ProductionView.swift */; };
+		2CCDA1062B8D52C600055161 /* Microphone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1022B8D52C600055161 /* Microphone.usdz */; };
+		2CCDA1072B8D52C600055161 /* Bass.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1032B8D52C600055161 /* Bass.usdz */; };
+		2CCDA1082B8D52C600055161 /* Drums.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1042B8D52C600055161 /* Drums.usdz */; };
+		2CCDA1092B8D52C600055161 /* Other.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1052B8D52C600055161 /* Other.usdz */; };
+		2CCDA10C2B8DCD9500055161 /* ProductionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDA10B2B8DCD9500055161 /* ProductionPlayer.swift */; };
+		2CCDA1132B8E832800055161 /* bass_BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA10F2B8E832800055161 /* bass_BustyAndTheBass_OutOfLove.mp3 */; };
+		2CCDA1142B8E832800055161 /* drums_BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1102B8E832800055161 /* drums_BustyAndTheBass_OutOfLove.mp3 */; };
+		2CCDA1152B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1112B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 */; };
+		2CCDA1162B8E832800055161 /* vocals_BustyAndTheBass_OutOfLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1122B8E832800055161 /* vocals_BustyAndTheBass_OutOfLove.mp3 */; };
+		2CCDA11B2B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1172B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 */; };
+		2CCDA11C2B8E833000055161 /* drums_MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1182B8E833000055161 /* drums_MacMiller_BlueWorld.mp3 */; };
+		2CCDA11D2B8E833000055161 /* others_MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA1192B8E833000055161 /* others_MacMiller_BlueWorld.mp3 */; };
+		2CCDA11E2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDA11A2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 */; };
 		2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2532B54DCB300B570E0 /* ConcertView.swift */; };
 		2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC2552B54FB6B00B570E0 /* Concert.swift */; };
 		2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBC25A2B55002200B570E0 /* MyConcerts.swift */; };
@@ -72,7 +95,6 @@
 /* Begin PBXFileReference section */
 		2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertControlsView.swift; sourceTree = "<group>"; };
 		2C3B69A32A79C4B200E4A4F2 /* visionOS-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "visionOS-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3B69A72A79C4B200E4A4F2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionOS_tutorialApp.swift; sourceTree = "<group>"; };
 		2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C3B69B12A79C4B300E4A4F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -115,10 +137,35 @@
 		2C4101D72B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
 		2C4101D82B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
 		2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Sunlight.swift"; sourceTree = "<group>"; };
+		2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
 		2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AverageColor.swift"; sourceTree = "<group>"; };
-		2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		2C6A16DF2B5742F600910E64 /* ConcertRealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertRealityView.swift; sourceTree = "<group>"; };
 		2C6E96D62B75F226001C0225 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2C6E96D82B7965F9001C0225 /* ControlsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsBar.swift; sourceTree = "<group>"; };
+		2CCDA0E22B8AD68700055161 /* Production.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
+		2CCDA0E42B8AD80F00055161 /* MyProductions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductions.swift; sourceTree = "<group>"; };
+		2CCDA0E82B8AD98100055161 /* bass_Jungle_BackOn74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bass_Jungle_BackOn74.mp3; sourceTree = "<group>"; };
+		2CCDA0E92B8AD98100055161 /* vocals_Jungle_BackOn74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vocals_Jungle_BackOn74.mp3; sourceTree = "<group>"; };
+		2CCDA0EA2B8AD98100055161 /* drums_Jungle_BackOn74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drums_Jungle_BackOn74.mp3; sourceTree = "<group>"; };
+		2CCDA0EB2B8AD98100055161 /* others_Jungle_BackOn74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = others_Jungle_BackOn74.mp3; sourceTree = "<group>"; };
+		2CCDA0F02B8AD9A100055161 /* ProductionRealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionRealityView.swift; sourceTree = "<group>"; };
+		2CCDA0F22B8ADCDC00055161 /* ProductionControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionControlsView.swift; sourceTree = "<group>"; };
+		2CCDA0F42B8D357A00055161 /* ProductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionView.swift; sourceTree = "<group>"; };
+		2CCDA1022B8D52C600055161 /* Microphone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Microphone.usdz; sourceTree = "<group>"; };
+		2CCDA1032B8D52C600055161 /* Bass.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Bass.usdz; sourceTree = "<group>"; };
+		2CCDA1042B8D52C600055161 /* Drums.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Drums.usdz; sourceTree = "<group>"; };
+		2CCDA1052B8D52C600055161 /* Other.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Other.usdz; sourceTree = "<group>"; };
+		2CCDA10A2B8DAB7400055161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2CCDA10B2B8DCD9500055161 /* ProductionPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionPlayer.swift; sourceTree = "<group>"; };
+		2CCDA10F2B8E832800055161 /* bass_BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bass_BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
+		2CCDA1102B8E832800055161 /* drums_BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drums_BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
+		2CCDA1112B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = others_BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
+		2CCDA1122B8E832800055161 /* vocals_BustyAndTheBass_OutOfLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vocals_BustyAndTheBass_OutOfLove.mp3; sourceTree = "<group>"; };
+		2CCDA1172B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bass_MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
+		2CCDA1182B8E833000055161 /* drums_MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drums_MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
+		2CCDA1192B8E833000055161 /* others_MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = others_MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
+		2CCDA11A2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vocals_MacMiller_BlueWorld.mp3; sourceTree = "<group>"; };
 		2CFBC2532B54DCB300B570E0 /* ConcertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertView.swift; sourceTree = "<group>"; };
 		2CFBC2552B54FB6B00B570E0 /* Concert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
 		2CFBC25A2B55002200B570E0 /* MyConcerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcerts.swift; sourceTree = "<group>"; };
@@ -138,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3B69A92A79C4B200E4A4F2 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				2C3B69A52A79C4B200E4A4F2 /* visionOS-tutorial */,
-				2C3B69A62A79C4B200E4A4F2 /* Packages */,
 				2C3B69A42A79C4B200E4A4F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,6 +210,7 @@
 		2C3B69A52A79C4B200E4A4F2 /* visionOS-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2CCDA10A2B8DAB7400055161 /* Info.plist */,
 				2C3B69AA2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift */,
 				2C53AB5F2B7DC37E00599EEB /* Resources */,
 				2C3B69C02A79C5B100E4A4F2 /* Views */,
@@ -173,14 +219,6 @@
 				2C3B69B02A79C4B300E4A4F2 /* Preview Content */,
 			);
 			path = "visionOS-tutorial";
-			sourceTree = "<group>";
-		};
-		2C3B69A62A79C4B200E4A4F2 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				2C3B69A72A79C4B200E4A4F2 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		2C3B69B02A79C4B300E4A4F2 /* Preview Content */ = {
@@ -194,10 +232,12 @@
 		2C3B69BE2A79C5A700E4A4F2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2CCDA0F62B8D3ED600055161 /* 3dModels */,
 				2C4101A42B75A37100CC3665 /* Audio */,
 				2CFBC2502B54D76200B570E0 /* Videos */,
 				2C3B69CC2A79C60000E4A4F2 /* MyLibrary.swift */,
 				2CFBC25A2B55002200B570E0 /* MyConcerts.swift */,
+				2CCDA0E42B8AD80F00055161 /* MyProductions.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -205,10 +245,12 @@
 		2C3B69BF2A79C5AC00E4A4F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */,
 				2C3B69C92A79C5F400E4A4F2 /* ViewModel.swift */,
+				2C4101DE2B75C55200CC3665 /* AudioPlayer.swift */,
+				2CCDA10B2B8DCD9500055161 /* ProductionPlayer.swift */,
 				2C3B69CB2A79C60000E4A4F2 /* Playlist.swift */,
 				2CFBC2552B54FB6B00B570E0 /* Concert.swift */,
+				2CCDA0E22B8AD68700055161 /* Production.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +262,7 @@
 				2C6E96D82B7965F9001C0225 /* ControlsBar.swift */,
 				2CFBC2592B54FFD000B570E0 /* Concerts */,
 				2CFBC2582B54FFC000B570E0 /* Library */,
+				2CCDA0E12B8AD57000055161 /* Producer */,
 				2CFBC2572B54FEBF00B570E0 /* Navigation */,
 			);
 			path = Views;
@@ -248,6 +291,7 @@
 		2C4101A42B75A37100CC3665 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				2CCDA0E72B8AD95B00055161 /* Productions */,
 				2C4101B52B75ACB300CC3665 /* FunkAndSoul */,
 				2C4101B42B75A93400CC3665 /* SoftPop */,
 				2C4101A72B75A47300CC3665 /* IndieRock */,
@@ -320,10 +364,76 @@
 		2C53AB5F2B7DC37E00599EEB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C4885CB2B8FF41F00E773AB /* Sunlight.skybox */,
 				2C3B69AE2A79C4B300E4A4F2 /* Assets.xcassets */,
 				2C53AB602B7DC39700599EEB /* Image+AverageColor.swift */,
+				2C4885C92B8FF38600E773AB /* Entity+Sunlight.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CCDA0E12B8AD57000055161 /* Producer */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA0F02B8AD9A100055161 /* ProductionRealityView.swift */,
+				2CCDA0F22B8ADCDC00055161 /* ProductionControlsView.swift */,
+				2CCDA0F42B8D357A00055161 /* ProductionView.swift */,
+			);
+			path = Producer;
+			sourceTree = "<group>";
+		};
+		2CCDA0E62B8AD94D00055161 /* DeconstructedJungle */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA0E82B8AD98100055161 /* bass_Jungle_BackOn74.mp3 */,
+				2CCDA0EA2B8AD98100055161 /* drums_Jungle_BackOn74.mp3 */,
+				2CCDA0EB2B8AD98100055161 /* others_Jungle_BackOn74.mp3 */,
+				2CCDA0E92B8AD98100055161 /* vocals_Jungle_BackOn74.mp3 */,
+			);
+			path = DeconstructedJungle;
+			sourceTree = "<group>";
+		};
+		2CCDA0E72B8AD95B00055161 /* Productions */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA10E2B8E82FE00055161 /* DeconstructedMacMiller */,
+				2CCDA10D2B8E82A500055161 /* DeconstructedBusty */,
+				2CCDA0E62B8AD94D00055161 /* DeconstructedJungle */,
+			);
+			path = Productions;
+			sourceTree = "<group>";
+		};
+		2CCDA0F62B8D3ED600055161 /* 3dModels */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA1032B8D52C600055161 /* Bass.usdz */,
+				2CCDA1042B8D52C600055161 /* Drums.usdz */,
+				2CCDA1022B8D52C600055161 /* Microphone.usdz */,
+				2CCDA1052B8D52C600055161 /* Other.usdz */,
+			);
+			path = 3dModels;
+			sourceTree = "<group>";
+		};
+		2CCDA10D2B8E82A500055161 /* DeconstructedBusty */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA10F2B8E832800055161 /* bass_BustyAndTheBass_OutOfLove.mp3 */,
+				2CCDA1102B8E832800055161 /* drums_BustyAndTheBass_OutOfLove.mp3 */,
+				2CCDA1112B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 */,
+				2CCDA1122B8E832800055161 /* vocals_BustyAndTheBass_OutOfLove.mp3 */,
+			);
+			path = DeconstructedBusty;
+			sourceTree = "<group>";
+		};
+		2CCDA10E2B8E82FE00055161 /* DeconstructedMacMiller */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDA1172B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 */,
+				2CCDA1182B8E833000055161 /* drums_MacMiller_BlueWorld.mp3 */,
+				2CCDA1192B8E833000055161 /* others_MacMiller_BlueWorld.mp3 */,
+				2CCDA11A2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 */,
+			);
+			path = DeconstructedMacMiller;
 			sourceTree = "<group>";
 		};
 		2CFBC2502B54D76200B570E0 /* Videos */ = {
@@ -360,7 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				2CFBC2532B54DCB300B570E0 /* ConcertView.swift */,
-				2C6A16DF2B5742F600910E64 /* VideoPlayer.swift */,
+				2C6A16DF2B5742F600910E64 /* ConcertRealityView.swift */,
 				2C08ECCD2B621EDB00DDE0BC /* ConcertControlsView.swift */,
 			);
 			path = Concerts;
@@ -413,7 +523,6 @@
 			);
 			name = "visionOS-tutorial";
 			packageProductDependencies = (
-				2C3B69A82A79C4B200E4A4F2 /* RealityKitContent */,
 			);
 			productName = "visionOS-tutorial";
 			productReference = 2C3B69A32A79C4B200E4A4F2 /* visionOS-tutorial.app */;
@@ -443,6 +552,8 @@
 				Base,
 			);
 			mainGroup = 2C3B699A2A79C4B200E4A4F2;
+			packageReferences = (
+			);
 			productRefGroup = 2C3B69A42A79C4B200E4A4F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -460,10 +571,15 @@
 				2CFFFE612B6C87A9008FF0D5 /* OceanAlley_BabyComeBack.MOV in Resources */,
 				2C4101D92B75B00D00CC3665 /* AndersonPaak_HeartDontStandAChance.mp3 in Resources */,
 				2C4101BB2B75AFEB00CC3665 /* OceanAlley_Confidence.mp3 in Resources */,
+				2C4885CC2B8FF41F00E773AB /* Sunlight.skybox in Resources */,
+				2CCDA11D2B8E833000055161 /* others_MacMiller_BlueWorld.mp3 in Resources */,
 				2CFFFE4D2B6C8761008FF0D5 /* GlassAnimals_Gooey.MOV in Resources */,
 				2C3B69B22A79C4B300E4A4F2 /* Preview Assets.xcassets in Resources */,
 				2C4101C62B75AFF700CC3665 /* Jet_AreYouGonnaBeMyGirl.mp3 in Resources */,
+				2CCDA1132B8E832800055161 /* bass_BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C4101AD2B75A52B00CC3665 /* BillyJoel_Vienna.mp3 in Resources */,
+				2CCDA1082B8D52C600055161 /* Drums.usdz in Resources */,
+				2CCDA0ED2B8AD98100055161 /* vocals_Jungle_BackOn74.mp3 in Resources */,
 				2C4101C82B75AFF700CC3665 /* TheKooks_Naive.mp3 in Resources */,
 				2C40AD102BAA558000FC5A2A /* AndersonPaak_ComeDown.MOV in Resources */,
 				2C4101AF2B75A52B00CC3665 /* EltonJohn_BennieAndTheJets.mp3 in Resources */,
@@ -471,13 +587,21 @@
 				2CFFFE5F2B6C87A9008FF0D5 /* OceanAlley_Confidence.MOV in Resources */,
 				2C4101BD2B75AFEB00CC3665 /* StickyFingers_GoldSnafu.mp3 in Resources */,
 				2C4101C92B75AFF700CC3665 /* TheStrokes_LastNite.mp3 in Resources */,
+				2CCDA0EF2B8AD98100055161 /* others_Jungle_BackOn74.mp3 in Resources */,
 				2C4101AE2B75A52B00CC3665 /* Eagles_OneOfTheseNights.mp3 in Resources */,
+				2CCDA1072B8D52C600055161 /* Bass.usdz in Resources */,
 				2C4101C72B75AFF700CC3665 /* ArcticMonkeys_DoIWannaKnow.mp3 in Resources */,
+				2CCDA1092B8D52C600055161 /* Other.usdz in Resources */,
 				2C4101C52B75AFF700CC3665 /* FranzFerdinand_TakeMeOut.mp3 in Resources */,
+				2CCDA1142B8E832800055161 /* drums_BustyAndTheBass_OutOfLove.mp3 in Resources */,
+				2CCDA1162B8E832800055161 /* vocals_BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C4101DD2B75B00D00CC3665 /* MacMiller_BlueWorld.mp3 in Resources */,
 				2C4101B02B75A52B00CC3665 /* Toploader_DancingInTheMoonlight.mp3 in Resources */,
+				2CCDA0EC2B8AD98100055161 /* bass_Jungle_BackOn74.mp3 in Resources */,
 				2CFFFE602B6C87A9008FF0D5 /* OceanAlley_Knees.MOV in Resources */,
+				2CCDA1062B8D52C600055161 /* Microphone.usdz in Resources */,
 				2CFFFE4F2B6C8761008FF0D5 /* GlassAnimals_HeatWaves.MOV in Resources */,
+				2CCDA1152B8E832800055161 /* others_BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C4101BE2B75AFEB00CC3665 /* StillWoozy_GoodieBag.mp3 in Resources */,
 				2C4101BF2B75AFEB00CC3665 /* WinstonSurfshirt_BeAboutYou.mp3 in Resources */,
 				2C4101BC2B75AFEB00CC3665 /* SpaceyJane_BoosterSeat.mp3 in Resources */,
@@ -485,16 +609,19 @@
 				2C40AD162BAA5E8100FC5A2A /* TheInternet_Girl.MOV in Resources */,
 				2C40AD0E2BAA558000FC5A2A /* AndersonPaak_TheBird.MOV in Resources */,
 				2CCDA11B2B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 in Resources */,
+				2CCDA11B2B8E833000055161 /* bass_MacMiller_BlueWorld.mp3 in Resources */,
 				2C4101D02B75B00300CC3665 /* CorinneBaileyRae_PutYourRecordsOn.mp3 in Resources */,
 				2C4101DC2B75B00D00CC3665 /* BustyAndTheBass_OutOfLove.mp3 in Resources */,
 				2C3B69AF2A79C4B300E4A4F2 /* Assets.xcassets in Resources */,
 				2C4101CF2B75B00300CC3665 /* JackJohnson_BananaPancakes.mp3 in Resources */,
+				2CCDA11C2B8E833000055161 /* drums_MacMiller_BlueWorld.mp3 in Resources */,
 				2C4101DB2B75B00D00CC3665 /* Jungle_BackOn74.mp3 in Resources */,
 				2C40AD142BAA5E8100FC5A2A /* SteveLacy_DarkRed_2.MOV in Resources */,
 				2CFFFE552B6C8790008FF0D5 /* EasyLife_PeanutButter.MOV in Resources */,
 				2C4101B12B75A52B00CC3665 /* FleetwoodMac_Dreams.mp3 in Resources */,
 				2CCDA11E2B8E833000055161 /* vocals_MacMiller_BlueWorld.mp3 in Resources */,
 				2CFFFE532B6C8790008FF0D5 /* EasyLife_PettyCrimes.MOV in Resources */,
+				2CCDA0EE2B8AD98100055161 /* drums_Jungle_BackOn74.mp3 in Resources */,
 				2CFFFE4E2B6C8761008FF0D5 /* GlassAnimals_TheOtherSideOfParadise.MOV in Resources */,
 				2C4101DA2B75B00D00CC3665 /* ChildishGambino_Redbone.mp3 in Resources */,
 				2C40AD152BAA5E8100FC5A2A /* SteveLacy_DarkRed.MOV in Resources */,
@@ -514,19 +641,26 @@
 				2C3B69C62A79C5E700E4A4F2 /* TabbarItem.swift in Sources */,
 				2C3B69C72A79C5E700E4A4F2 /* SongDetailView.swift in Sources */,
 				2C3B69CF2A79C60000E4A4F2 /* MyLibrary.swift in Sources */,
-				2C6A16E02B5742F600910E64 /* VideoPlayer.swift in Sources */,
+				2C6A16E02B5742F600910E64 /* ConcertRealityView.swift in Sources */,
 				2C08ECCE2B621EDB00DDE0BC /* ConcertControlsView.swift in Sources */,
 				2C53AB612B7DC39700599EEB /* Image+AverageColor.swift in Sources */,
+				2C4885CA2B8FF38600E773AB /* Entity+Sunlight.swift in Sources */,
 				2C6E96D92B7965F9001C0225 /* ControlsBar.swift in Sources */,
 				2C3B69C52A79C5E700E4A4F2 /* PlaylistView.swift in Sources */,
 				2CFBC2562B54FB6B00B570E0 /* Concert.swift in Sources */,
+				2CCDA0F12B8AD9A100055161 /* ProductionRealityView.swift in Sources */,
 				2CFBC2542B54DCB300B570E0 /* ConcertView.swift in Sources */,
+				2CCDA0F52B8D357A00055161 /* ProductionView.swift in Sources */,
 				2C3B69CE2A79C60000E4A4F2 /* Playlist.swift in Sources */,
+				2CCDA0F32B8ADCDC00055161 /* ProductionControlsView.swift in Sources */,
 				2C3B69C82A79C5E700E4A4F2 /* MusicNavigationView.swift in Sources */,
+				2CCDA0E52B8AD80F00055161 /* MyProductions.swift in Sources */,
 				2C3B69AB2A79C4B200E4A4F2 /* visionOS_tutorialApp.swift in Sources */,
 				2CFBC25B2B55002200B570E0 /* MyConcerts.swift in Sources */,
 				2C3B69CA2A79C5F400E4A4F2 /* ViewModel.swift in Sources */,
+				2CCDA0E32B8AD68700055161 /* Production.swift in Sources */,
 				2C6E96D72B75F226001C0225 /* MainView.swift in Sources */,
+				2CCDA10C2B8DCD9500055161 /* ProductionPlayer.swift in Sources */,
 				2C4101DF2B75C55200CC3665 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +798,7 @@
 				DEVELOPMENT_TEAM = YS4RN3Q87M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "visionOS-tutorial/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,6 +825,7 @@
 				DEVELOPMENT_TEAM = YS4RN3Q87M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "visionOS-tutorial/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -727,13 +863,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2C3B69A82A79C4B200E4A4F2 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C3B699B2A79C4B200E4A4F2 /* Project object */;
 }
